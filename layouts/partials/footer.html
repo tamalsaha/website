@@ -1,0 +1,105 @@
+
+
+<!--====================================
+            Start header arewa
+=====================================-->
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-left footer-left">
+                    <div class="ft-logo">
+                        Container Cloud
+                        <!--<img src="/images/logo-color.svg">-->
+                        <span> @2017</span>
+                    </div>
+                    <div class="ft-copy-right">
+                        <P> Api Biueprint is released under <span> <a href="#">CC Licence</a> </span></P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-right footer-right">
+                    <div class="ft-nav-menu">
+                        <ul>
+                            <li><a href="/terms/">Terms</a></li>
+                            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="/agreement/">Agreement</a></li>
+                            <li><a href="/security">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End our Project -->
+
+
+
+<script type="text/javascript">
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    var amountScrolled = 100;
+
+    $(window).scroll(function() {
+        if ( $(window).scrollTop() > amountScrolled ) {
+            $('a.back-to-top').fadeIn('slow');
+        } else {
+            $('a.back-to-top').fadeOut('slow');
+        }
+    });
+
+    $('a.back-to-top').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+        return false;
+    });
+</script>
+
+
+
+
+<!--new cookie-->
+
+<div class="ac-cookies collapse cookie-notice">
+    <button class="ac-cookies-ok accept-cookie">OK</button>
+    <span class="ac-cookies-message">
+        We use cookies to ensure that we give you the best experience on our website. By using this site, you agree to its use of cookies.
+        <a href="/legal/privacy-policy/" target="_blank" role="button">Learn more</a>
+    </span>
+</div>
+
+
+</div><!-- End Page Wrapper, Full Width -->
+
+<!-- Change cookie name everytime privacy policy changes. -->
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        if (Cookies && Cookies.get('COOKIE_ACK') !== 'yes') {
+            $(".cookie-notice").collapse('show');
+        }
+        $(".accept-cookie").click(function() {
+            Cookies.set('COOKIE_ACK', 'yes', { expires: 3650 });
+            $(".cookie-notice").collapse('hide');
+        });
+    });
+</script>
+
+<!--Start of Tawk.to Script-->
+<!--<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5821e34b18d9f16af02864b7/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>-->
+<!--End of Tawk.to Script-->
+</body>
+</html>

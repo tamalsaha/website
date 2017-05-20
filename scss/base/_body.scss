@@ -1,0 +1,50 @@
+
+#video-area {
+  // margin:0 0 100px;
+  margin: 0;
+  top: -150px;
+  position: relative;
+  .video {
+    background: $video-bg;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    box-shadow: $video-shadow;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+}
+
+.get-installation {
+  margin: 0 0 100px 0;
+  .installation-content {
+
+  }
+}
+
+#configuration {
+  padding: 50px 0;
+  .getting-started {
+    box-shadow:$configuration-shadow ;
+    background: $configuration-bg;
+    padding: 20px 30px;
+    border-radius: 6px;
+    a {
+      text-decoration: none;
+      .cc-icon {
+        width: 18%;
+        vertical-align: top;
+        display: inline-block;
+        padding: 10px;
+      }
+      .cc-content {
+        width: 80%;
+        display: inline-block;
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+

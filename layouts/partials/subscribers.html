@@ -1,0 +1,53 @@
+
+<section id="subscribers">
+    <div class="subscribers-header">
+        <h2>Subscribe to our free technical newsletter!</h2>
+        <p>Join thousands of subscribers and stay up-to-date on AppsCode.</p>
+    </div>
+
+    <div class="subscribers-body">
+        <span class="hidden" role="ack"></span>
+        <form class="navbar-form" role="email">
+            <input type="email" name="email-subscribe" required class="form-control subscribe-email" placeholder="Your work email address">
+            <button type="submit" class="btn mail-subscribe">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+
+<script>
+$(document).ready(function() {
+    $('.mail-subscribe').on('click', function(e) {
+        e.preventDefault();
+        const isFormValid = $('form').valid();
+        if (isFormValid) {
+            const email = $('.subscribe-email').val();
+            const url = 'https://api.appscode.com/mailinglist/v1beta1/subscribe/json';
+            $.ajax({
+                url: url,
+                crossDomain: true,
+                type: 'PUT',
+                dataType: 'JSON',
+                data: JSON.stringify({
+                    'email': email
+                }),
+                success(resp) {
+                    const statusCode = resp.status.code;
+                    if (statusCode === '0') {
+                        $('form[role="email"]').addClass('hidden');
+                        $('span[role="ack"]').text("Thanks for subscribing! We'll send you a welcome email shortly!").toggleClass('hidden');
+                    } else {
+                        $('form[role="email"]').addClass('hidden');
+                        $('span[role="ack"]').text(resp.status.message).toggleClass('hidden');
+                    }
+                },
+                error(xhr, status, err) {
+                    $('form[role="email"]').addClass('hidden');
+                    $('span[role="ack"]').text('Failed to connect to api server. Please try again later.').toggleClass('hidden');
+                    console.log('status: ', status, 'err: ', err);
+                }
+            });
+        }
+    });
+});
+</script>
