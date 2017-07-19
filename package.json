@@ -1,7 +1,7 @@
 {
-  "name": "appscode-web",
-  "description": "AppsCode Website",
-  "version": "1.0.0",
+  "name": "kubedb-web",
+  "description": "KubeDB Website",
+  "version": "0.1.0",
   "authors": [
     "AppsCode Eng <eng@appscode.com>"
   ],
