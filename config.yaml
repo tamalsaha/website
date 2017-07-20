@@ -30,7 +30,7 @@ menu:
         Pre: "<i class='fa fa-terminal'></i>"
         Weight: 1
         URL: https://github.com/k8sdb/cli/blob/master/docs/install.md
-      - Name: "Tutorial"
+      - Name: "Tutorials"
         Pre: "<i class='fa fa-book'></i>"
         Weight: 2
         URL: https://github.com/k8sdb/cli/tree/master/docs/tutorials
