@@ -1,5 +1,5 @@
-title: All-In-One Application Development Platform
-baseurl: https://appscode.info
+title: Kubernetes ready production-grade Databases
+baseurl: https://kubedb.com
 languageCode: en-us
 pluralizeListTitles: false
 pygmentsStyle: "monokai"
@@ -11,21 +11,31 @@ taxonomies:
   category: "categories"
   author: "authors"
 params:
-  author: AppsCode Team
+  author: KubeDB Authors
   date_format: Mon, Jan 2, 2006
-  description: Integrated platform for collaborative coding, testing & deploying containerized apps
-  ga_id: UA-62096468-3
-  tagmanager_id: GTM-KNFV55
+  description: Kubernetes ready production-grade Databases by AppsCode
   email: support@appscode.com
   logo: /images/logo.svg
-  twitterstatus_url: https://twitter.com/AppsCodeStatus
   twitter_url: https://twitter.com/AppsCodeHQ
   facebook_url: https://www.facebook.com/appscode
-  github_url: https://github.com/appscode
-  stackoverflow_url: https://appscode.com/
-  docker_url: https://hub.docker.com/u/appscode
+  github_url: https://github.com/k8sdb
+  docker_url: https://hub.docker.com/u/kubedb
   youtube_url: https://www.youtube.com/c/appscode
-  slack_url: https://slack.appscode.com/
   contact_email: support@appscode.com
   sales_email: sales@appscode.com
   contact_phone: +1 (650) 241-8486
+menu:
+  main:
+      - Name: "Install"
+        Pre: "<i class='fa fa-terminal'></i>"
+        Weight: 1
+        URL: https://github.com/k8sdb/cli/blob/master/docs/install.md
+      - Name: "Tutorial"
+        Pre: "<i class='fa fa-book'></i>"
+        Weight: 2
+        URL: https://github.com/k8sdb/cli/tree/master/docs/tutorials
+      - Name: "GitHub"
+        Pre: "<i class='fa fa-github'></i>"
+        Weight: 3
+        Identifier: "about"
+        URL: "https://github.com/k8sdb"

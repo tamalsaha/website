@@ -235,7 +235,7 @@ gulp.task('trigger-hugo', () => gulp.src(['rev-manifest.json'])
 
 /* Build hugo contents */
 gulp.task('hugo:prod', () => {
-  const cmd = child.spawnSync('hugo', ['-v', '--config=config.prod.yaml']);
+  const cmd = child.spawnSync('hugo', ['-v', '--config=config.yaml']);
   if (cmd.stderr.length) {
     const lines = cmd.stderr.toString()
       .split('\n')

@@ -2,8 +2,8 @@
 <section id="top-header">
    {{ partial "menu.html" . }}
    <div class="text-center header">
-      <h1>Code · Test · Deploy · Run</h1>
-      <p>Integrated platform for collaborative coding, testing & deploying containerized apps</p>
+      <h1>KubeDB</h1>
+      <p>Kubernetes ready production-grade Databases by AppsCode</p>
    </div>
 </section>
 
@@ -35,12 +35,11 @@
             <div class="col-md-8">
                <div class="installation-pre">
 <pre><textarea id="installation-pre">
- // Charge or refund customers
- let charge = await stripe.charges.create({
-    amount: 7999,
-    currency: 'eur',
-    customer: customer.id
- });
+wget -O kubedb https://github.com/k8sdb/cli/releases/download/0.5.0/kubedb-linux-amd64 \
+  && chmod +x kubedb \
+  && sudo mv kubedb /usr/local/bin/
+
+kubedb init
 </textarea></pre>
                </div>
             </div>
