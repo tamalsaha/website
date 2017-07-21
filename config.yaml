@@ -41,7 +41,7 @@ menu:
         Pre: "<i class='fa fa-twitter'></i>"
         Weight: 4
         Identifier: "twitter"
-        URL: "https://github.com/k8sdb"
+        URL: "https://twitter.com/AppsCodeHQ"
       - Name:
         Pre: "<i class='fa fa-slack'></i>"
         Weight: 5
