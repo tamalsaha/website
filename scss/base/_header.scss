@@ -1,7 +1,11 @@
 
+
+
+
 #top-header {
-  background: url(https://cdn.appscode.com/images/10.svg) no-repeat scroll center center/cover border-box, -webkit-linear-gradient(30deg, $gradient-a 0, $gradient-b 100%) no-repeat scroll center center/cover;
-  height: 450px;
+  height: 500px;
+  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb) no-repeat scroll center center/cover;
+  //background: linear-gradient(-12deg,#7795f8 50%,#6772e5 80%,#555abf);
   .header {
     padding: 80px 0;
 
@@ -29,7 +33,7 @@
 // inner-header
 
 #inner-header {
-  background: url(https://cdn.appscode.com/images/10.svg) no-repeat scroll center center/cover border-box, -webkit-linear-gradient(30deg, $gradient-a 0, $gradient-b 100%) no-repeat scroll center center/cover;
+  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(15deg,#035af6 10%,#008af8 100%,#0088ff) no-repeat scroll center center/cover;
   .header {
     padding: 80px 0;
     h1 {

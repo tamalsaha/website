@@ -8,6 +8,7 @@ $ac-base-green:#3bb878;
 $ac-base-blue:#03A9F4;
 $primary-color:#3bb878;
 $border:#dddddd;
+$ac-cookies-ok:#2a283a;
 
 // header gradient
 $gradient-a :#1d72da;
@@ -138,7 +139,9 @@ $placeholder-color:$paragraph;
 $footer:#2a283a;
 $footer-logo:#d3d1dd;
 $footer-logo-year:#7a778c;
-$footer-text:#555368;
+$footer-text:$footer-logo-year;
 
 // cookies
-$cookies-bg:#122337;
+$cookies-bg:#6161d9;
+
+

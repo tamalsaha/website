@@ -36,13 +36,14 @@ const paths = {
 
   js_global: {
     files: [
-      'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/codemirror/lib/codemirror.js',
       'node_modules/codemirror/mode/javascript/javascript.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/featherlight/release/featherlight.min.js',
       'node_modules/jquery-validation/dist/jquery.validate.js',
-      'node_modules/jquery/dist/jquery.min.js'
-      // 'node_modules/typed.js/dist/typed.min.js'
+      'node_modules/js-cookie/src/js.cookie.js'
+// 'node_modules/typed.js/dist/typed.min.js'
     ],
     ie: [
       'node_modules/html5shiv/dist/html5shiv.min.js',

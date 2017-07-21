@@ -17,7 +17,7 @@
                 {{ $currentNode := . }}
                 {{ range .Site.Menus.main }}
                     <li>
-                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }} active{{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
                     </li>
                 {{end}}
             </ul> <!-- top menu end-->

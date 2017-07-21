@@ -27,15 +27,23 @@ params:
 menu:
   main:
       - Name: "Install"
-        Pre: "<i class='fa fa-terminal'></i>"
         Weight: 1
         URL: https://github.com/k8sdb/cli/blob/master/docs/install.md
       - Name: "Tutorials"
-        Pre: "<i class='fa fa-book'></i>"
         Weight: 2
         URL: https://github.com/k8sdb/cli/tree/master/docs/tutorials
-      - Name: "GitHub"
+      - Name:
         Pre: "<i class='fa fa-github'></i>"
         Weight: 3
-        Identifier: "about"
+        Identifier: "GitHub"
         URL: "https://github.com/k8sdb"
+      - Name:
+        Pre: "<i class='fa fa-twitter'></i>"
+        Weight: 4
+        Identifier: "twitter"
+        URL: "https://github.com/k8sdb"
+      - Name:
+        Pre: "<i class='fa fa-slack'></i>"
+        Weight: 5
+        Identifier: "slack"
+        URL: "https://slack.appscode.com/"

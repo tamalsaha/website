@@ -1,31 +1,40 @@
 
 
 footer {
-    // margin-top: 100px;
+    //margin-top: 100px;
     background: $footer;
     padding: 70px 0;
     overflow: hidden;
+
     .footer-left {
+        @media(max-width: 680px) {
+            text-align: center;
+            margin: 30px 0;
+        }
+        text-align: left;
         .ft-logo {
-            display: inline-block;
+            display: block;
             font-size: 18px;
             color: $footer-logo;
             font-weight: 600;
             img {
-                display: inline-block;
-                width: 200px;
+                display: block;
+                width: 120px;
+                margin-bottom: 10px;
             }
             span {
                 color: $footer-logo-year;
                 font-size: 16px;
             }
         }
+
         .ft-copy-right {
-            display: inline-block;
+            display: block;
             p {
                 font-size: 16px;
-                padding-left: 30px;
+                padding-top: 15px;
                 color: $footer-text;
+                font-weight: 600;
                 margin-bottom: 0;
                 span {
                    a {
@@ -39,22 +48,59 @@ footer {
     }
 
     .footer-right {
+        text-align: right;
+        @media(max-width: 680px) {
+            text-align: center;
+            margin: 30px 0;
+        }
         .ft-nav-menu {
             ul {
                 padding: 0;
                 margin: 0;
                 li {
-                    display: inline-block;
+                    display:inline-block;
                     list-style: none;
                     padding: 0 10px;
+                    &.issue-file {
+                        color: #fff;
+                        background: linear-gradient(45deg, #7272E9, #4d4dcb);
+                        border-radius: 3px;
+                    }
                     a {
                         color: $white;
-                        padding: 5px 10px;
-                        font-size: 14px;
-                        display:block;
+                        padding: 10px;
+                        font-size: 18px;
+                        display: inline-block;
                         text-decoration: none;
+                        >i {
+                            padding-right: 10px;
+                        }
                     }
                 }
+            }
+        }
+        .github-star {
+            margin-top: 20px;
+            color: #fff;
+            a {
+              &.ac-logo {
+                  color: #fff;
+                  text-align: left;
+                  text-decoration: none;
+                  font-family: Oleo Script;
+                  &:hover, &:focus, &:active{
+                      text-decoration: none;
+                  }
+                 img {
+                     width: 16px;
+                     padding-bottom: 7px;
+                 }
+              }
+            }
+            span {
+                display: inline-block;
+                overflow: hidden;
+                line-height: 18px;
             }
         }
     }
@@ -111,7 +157,7 @@ a.back-to-top {
     padding: 0 15px;
     border-radius: 3px;
     color: $white;
-    background-color: $ac-base-blue;
+    background-color: $ac-cookies-ok;
     border: none;
     float: right;
     font-weight: 600;
@@ -126,7 +172,7 @@ a.back-to-top {
     width: 80%;
     display: inherit;
     a {
-        color: $ac-base-green;
+        color: #05002e;
         text-decoration: none;
         font-size: 12px;
         font-weight: 600;

@@ -3,15 +3,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 68 68" style="enable-background:new 0 0 68 68;" xml:space="preserve">
 <style type="text/css">
-	.st0{filter:url(#filter-2);}
-	.st1{fill:#3BB878;}
-	.st2{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;}
+	.st0{fill:#7272E9;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;}
 </style>
-<filter  filterUnits="objectBoundingBox" height="200%" id="filter-2" width="200%" x="-50%" y="-50%">
-	<feOffset  dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"></feGaussianBlur>
-	<feColorMatrix  in="shadowBlurOuter1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0"></feColorMatrix>
-</filter>
 <title>B6ED1B5B-9625-456B-8C6D-9385C2E222E8</title>
 <desc>Created with sketchtool.</desc>
 <g id="Page-1">
@@ -21,23 +15,23 @@
 				<g id="on_top_icon">
 					<g id="Menu-icon">
 						<g id="Oval">
-							<g class="st0">
-								<circle id="path-1_2_" cx="30" cy="30" r="30"/>
+							<g>
+								<circle id="path-1_2_" cx="30" cy="32.6" r="30"/>
 							</g>
 							<g>
-								<circle id="path-1_1_" class="st1" cx="30" cy="30" r="30"/>
+								<circle id="path-1_1_" class="st0" cx="30" cy="32.6" r="30"/>
 							</g>
 						</g>
 					</g>
 					<g id="on_top_arrow_icon" transform="translate(17.000000, 16.000000)">
-						<path id="Path-2-Copy" class="st2" d="M13.4,14V3.3"/>
+						<path id="Path-2-Copy" class="st1" d="M13.4,16.6V5.9"/>
 						<g id="Group-3">
-							<path id="Path-2" class="st2" d="M0,12L13.3,0"/>
-							<path id="Path-2-Copy-2" class="st2" d="M26.8,12L13.5,0"/>
+							<path id="Path-2" class="st1" d="M0,14.6l13.3-12"/>
+							<path id="Path-2-Copy-2" class="st1" d="M26.8,14.6l-13.3-12"/>
 						</g>
 						<g id="Group-5" transform="translate(0.000000, 14.000000)">
-							<path id="Path-2-Copy-3" class="st2" d="M0,12L13.3,0"/>
-							<path id="Path-2-Copy-4" class="st2" d="M26.8,12L13.5,0"/>
+							<path id="Path-2-Copy-3" class="st1" d="M0,14.6l13.3-12"/>
+							<path id="Path-2-Copy-4" class="st1" d="M26.8,14.6l-13.3-12"/>
 						</g>
 					</g>
 				</g>
