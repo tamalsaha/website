@@ -36,7 +36,7 @@ menu:
         Pre: "<i class='fa fa-github'></i>"
         Weight: 3
         Identifier: "GitHub"
-        URL: "https://github.com/k8sdb"
+        URL: "https://github.com/k8sdb/cli#kubedb"
       - Name:
         Pre: "<i class='fa fa-twitter'></i>"
         Weight: 4
