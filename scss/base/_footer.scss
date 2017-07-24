@@ -26,6 +26,29 @@ footer {
                 color: $footer-logo-year;
                 font-size: 16px;
             }
+            .github-star {
+                margin-top: 20px;
+                color: #fff;
+                a {
+                    &.ac-logo {
+                        color: #fff;
+                        text-align: left;
+                        text-decoration: none;
+                        &:hover, &:focus, &:active{
+                            text-decoration: none;
+                        }
+                        img {
+                            width: 16px;
+                            display: inline-block;
+                        }
+                    }
+                }
+                span {
+                    display: inline-block;
+                    overflow: hidden;
+                    line-height: 18px;
+                }
+            }
         }
 
         .ft-copy-right {
@@ -61,46 +84,24 @@ footer {
                     display:inline-block;
                     list-style: none;
                     padding: 0 10px;
-                    &.issue-file {
-                        color: #fff;
-                        background: linear-gradient(45deg, #7272E9, #4d4dcb);
-                        border-radius: 3px;
-                    }
+                    margin-bottom: 20px;
                     a {
+                        &.issue-file {
+                            color: #fff;
+                            background: linear-gradient(45deg, #7272E9, #4d4dcb);
+                            border-radius: 3px;
+                        }
                         color: $white;
-                        padding: 10px;
-                        font-size: 18px;
+                        padding: 4px 10px;
+                        font-size: 14px;
                         display: inline-block;
                         text-decoration: none;
+                        vertical-align: text-bottom;
                         >i {
                             padding-right: 10px;
                         }
                     }
                 }
-            }
-        }
-        .github-star {
-            margin-top: 20px;
-            color: #fff;
-            a {
-              &.ac-logo {
-                  color: #fff;
-                  text-align: left;
-                  text-decoration: none;
-                  font-family: Oleo Script;
-                  &:hover, &:focus, &:active{
-                      text-decoration: none;
-                  }
-                 img {
-                     width: 16px;
-                     padding-bottom: 7px;
-                 }
-              }
-            }
-            span {
-                display: inline-block;
-                overflow: hidden;
-                line-height: 18px;
             }
         }
     }
