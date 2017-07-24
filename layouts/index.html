@@ -3,7 +3,7 @@
    {{ partial "menu.html" . }}
    <div class="text-center header">
       <h1>KubeDB</h1>
-      <p>Kubernetes ready production-grade Databases by AppsCode</p>
+      <p>Kubernetes ready production-grade Databases</p>
    </div>
 </section>
 
@@ -32,9 +32,33 @@
                </div>
             </div>
             <div class="col-md-8">
+               <div class="installation-pre-area">
+                  <ul class="nav nav-tabs tab-install" role="tablist">
+                     <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
+                     <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content tab-install-data">
+                     <div class="tab-pane active" id="linux">
+                        <textarea class="installation-pre-code">
+$ wget -O kubedb https://github.com/k8sdb/cli/releases/download/0.6.0/kubedb-linux-amd64 \
+  && chmod +x kubedb \
+  && sudo mv kubedb /usr/local/bin/
 
-               {{ partial "installation.html" .}}
+$ kubedb init
+                        </textarea>
+                     </div>
+                     <div class="tab-pane" id="mac">
+                        <textarea class="installation-pre-code">
+$ wget -O kubedb https://github.com/k8sdb/cli/releases/download/0.6.0/kubedb-darwin-amd64 \
+  && chmod +x kubedb \
+  && sudo mv kubedb /usr/local/bin/
 
+$ kubedb init
+                        </textarea>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
@@ -83,8 +107,8 @@
                      <img src="/images/logo-color.svg">
                   </div>
                   <div class="cc-content">
-                     <h3>KubeDB</h3>
-                     <p>KubeDB comes with its own cli. It is called kubedb cli. kubedb can be used...</p>
+                     <h3>CLI</h3>
+                     <p>This tutorial will show you how to use KubeDB cli to manage KubeDB objects.</p>
                   </div>
                </a>
             </div>
@@ -98,7 +122,7 @@
                   </div>
                   <div class="cc-content">
                      <h3>Prometheus</h3>
-                     <p>This tutorial will show you how to monitor KubeDB databases...</p>
+                     <p>This tutorial will show you how to monitor KubeDB databases.</p>
                   </div>
                </a>
             </div>
