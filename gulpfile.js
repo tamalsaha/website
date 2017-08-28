@@ -17,6 +17,9 @@ const wait = require('gulp-wait');
 // Linting
 const sassLint = require('gulp-sass-lint');
 
+// js uglify
+const uglify = require('gulp-uglify');
+
 // File I/O
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
@@ -32,6 +35,12 @@ const paths = {
     files: ['html/layouts/**/*.html'],
     srcDir: 'html/layouts',
     destDir: 'layouts'
+  },
+
+  js: {
+    files: ['js/**/*.js'],
+    srcDir: 'js',
+    destDir: 'build/js'
   },
 
   js_global: {
@@ -207,6 +216,10 @@ gulp.task('layouts', () => {
 gulp.task('copy:js_global', () => gulp.src([].concat(paths.js_global.files, paths.js_global.ie))
     .pipe(gulp.dest(paths.js_global.destDir)));
 
+gulp.task('copy:js', () => gulp.src(paths.js.files)
+  .pipe(uglify())
+  .pipe(gulp.dest(paths.js.destDir)));
+
 /* Copies files to the distribution directory */
 ['images', 'fonts'].forEach((fileType) => {
   gulp.task(fileType, () => gulp.src(paths[fileType].files)
@@ -303,7 +316,7 @@ gulp.task('hugo:serve', () => {
 ['dev', 'prod'].forEach((env) => {
   gulp.task(env, (done) => {
     // Stop using firebase-tools directly until https://github.com/firebase/firebase-tools/issues/136
-    runSequence('clean', ['copy:js_global', 'css:prod', 'images', 'fonts', 'static'], 'layouts', `hugo:${env}`, (error) => {
+    runSequence('clean', ['copy:js_global', 'copy:js', 'css:prod', 'images', 'fonts', 'static'], 'layouts', `hugo:${env}`, (error) => {
       done(error && error.err);
     });
   });
@@ -311,7 +324,7 @@ gulp.task('hugo:serve', () => {
 
 // local
 gulp.task('default', (done) => {
-  runSequence('clean', 'copy:js_global', ['css:dev', 'images', 'fonts', 'static'], 'layouts', 'watch', 'hugo:serve', (error) => {
+  runSequence('clean', 'copy:js_global', 'copy:js', ['css:dev', 'images', 'fonts', 'static'], 'layouts', 'watch', 'hugo:serve', (error) => {
     done(error && error.err);
   });
 });
