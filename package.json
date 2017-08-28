@@ -27,6 +27,7 @@
     "gulp-rev": "^7.1.2",
     "gulp-sass": "^2.1.0",
     "gulp-sass-lint": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "gulp-wait": "^0.0.2",
     "js-cookie": "^2.1.2",
