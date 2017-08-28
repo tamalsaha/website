@@ -206,6 +206,7 @@ gulp.task('layouts', () => {
     .pipe(htmlreplace({
       js_global: ext,
       js_ie: ie,
+      // js_custom: `/js/${revman['custom.min.js']}`,
       css: `/css/${revman['style.min.css']}`
     }))
     // .pipe(htmlmin({collapseWhitespace: true}))
@@ -216,9 +217,22 @@ gulp.task('layouts', () => {
 gulp.task('copy:js_global', () => gulp.src([].concat(paths.js_global.files, paths.js_global.ie))
     .pipe(gulp.dest(paths.js_global.destDir)));
 
-gulp.task('copy:js', () => gulp.src(paths.js.files)
+gulp.task('copy:js', () => {
+
+  return gulp.src(paths.js.files)
   .pipe(uglify())
-  .pipe(gulp.dest(paths.js.destDir)));
+  .pipe(concat('custom.min.js'))
+  // .pipe(rev())
+  .pipe(gulp.dest(paths.js.destDir))
+  /* need to add before ending of html tag (</hrml>)
+     so, need to replace html in footer.html like header.html (html/layouts/partials/header.html)
+   .pipe(rev.manifest({
+    base: 'build-js',
+    merge: true
+  }))
+  .pipe(gulp.dest('build-js'))
+  */
+});
 
 /* Copies files to the distribution directory */
 ['images', 'fonts'].forEach((fileType) => {
@@ -230,6 +244,7 @@ gulp.task('copy:js', () => gulp.src(paths.js.files)
 gulp.task('watch', () => {
   const fileTypesToWatch = {
     scss: ['css:dev', 'layouts', 'trigger-hugo'],
+    js: ['copy:js'/*, 'layouts', 'trigger-hugo'*/],
     layouts: ['layouts'],
     fonts: ['fonts'],
     images: ['images']
