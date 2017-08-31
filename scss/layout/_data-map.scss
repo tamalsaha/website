@@ -1,0 +1,58 @@
+.data-map {
+  height: 800px;
+  width: 100%;
+}
+
+
+
+.tip {
+  opacity: 0;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+  visibility: hidden;
+  position: relative;
+  left: 8px;
+  top: -26px;
+  width: 350px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 42px 112px 0 rgba(240, 244, 253, 0.25), 0 30px 42px 0 rgba(156, 154, 154, 0.22);
+  border-radius: 6px;
+  h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #424770;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    img {
+      border-radius: 1px;
+      display: inline-block;
+      margin-left: 5px;
+      width: 20px;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      display: block;
+      color: #424770;
+      font-size: 16px;
+      &:before {
+        font-family: FontAwesome;
+        content: "\f18e";
+        color: #dbddef;
+        font-size: 14px;
+        padding-right: 8px;
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+    color: #424770;
+    letter-spacing: 0;
+    margin: 0 0 10px 0;
+    line-height: 25px;
+  }
+}

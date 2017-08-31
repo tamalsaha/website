@@ -126,10 +126,50 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<!--<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>-->
+
 <script src="/js/custom.min.js"></script>
 
 <!-- build:js_custom -->
 <!-- endbuild -->
 
+<script>
+  var bubble_map = new Datamap({
+    element: document.getElementById("data-map"),
+    geographyConfig: {
+      popupOnHover: true,
+      highlightOnHover: true
+    },
+    fills: {
+     defaultFill: '#ABDDA4',
+      bubbleColor:'#7272e9'
+    }
+  });
+  bubble_map.bubbles([
+    {
+      name: 'BGD',
+      radius: 4,
+      country: 'BGD',
+      fillKey: 'bubbleColor',
+      latitude: 23.82178248,
+      longitude:90.40168762
+    }
+
+  ], {
+    popupTemplate: function(geo, data) {
+      return '<div class="tip"><h3>Frankfurt <img src="/images/flag/frankfurt.png"> <p><b>Region</b>eu-central-1</p> <p><b>zones</b></p> <ul><li>eu-central-1a</li><li>eu-central-1b</li><li>eu-central-1c</li></ul></h3></div>'
+    }
+  });
+</script>
+
+
+
+<!--<script>
+
+  var map = new Datamap({element: document.getElementById('data-map')});
+
+</script>-->
 </body>
 </html>
