@@ -144,25 +144,46 @@ s0.parentNode.insertBefore(s1,s0);
     },
     fills: {
      defaultFill: '#ABDDA4',
-      bubbleColor:'#7272e9'
+     bubbleColor:'#7272e9'
     }
   });
   bubble_map.bubbles([
     {
-      name: 'BGD',
-      radius: 4,
+      cloud: 'aws',
+      radius: 10,
+      location: ['Hangzhou', 'a', 'b'],
       country: 'BGD',
       fillKey: 'bubbleColor',
       latitude: 23.82178248,
       longitude:90.40168762
+    },
+    {
+      cloud: ['azure', 'aws', 'aliyun', 'digitalocean', 'gce', 'hetzner', 'linode', 'ovh'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Silicon Valley',
+      radius: 10,
+      fillKey: 'bubbleColor',
+      latitude: 37.387474,
+      longitude: 122.0575434
     }
 
   ], {
     popupTemplate: function(geo, data) {
-      return '<div class="tip"><h3>Frankfurt <img src="/images/flag/frankfurt.png"> <p><b>Region</b>eu-central-1</p> <p><b>zones</b></p> <ul><li>eu-central-1a</li><li>eu-central-1b</li><li>eu-central-1c</li></ul></h3></div>'
+      // return '<div class="hoverinfo">Yield:' + data.yeild + 'Exploded on ' + data.date + ' by the '  + data.country + ' hello '  + data.significance + ''
+      return '<div class="hoverinfo">' +
+        '<h3>'+ data.country +' <img src="/images/flag/' + data.flag + '"/></h3>' +
+        '<P><b>Region</b> <br>'+ data.location +'</P>' +
+        '<h3>Cloud Provider</h3>' +
+        '<ul>' +
+        '<li>'+ data.cloud + '</li>'+
+        '</ul>' +
+        ' </div>'
     }
   });
 </script>
+
+
 
 
 
