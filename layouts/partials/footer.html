@@ -171,13 +171,17 @@ s0.parentNode.insertBefore(s1,s0);
   ], {
     popupTemplate: function(geo, data) {
       // return '<div class="hoverinfo">Yield:' + data.yeild + 'Exploded on ' + data.date + ' by the '  + data.country + ' hello '  + data.significance + ''
+
+      var liCloud = '';
+      data.cloud.forEach(function (cloud) {
+        liCloud += '<li><img src="/images/cloud-logo/' + cloud + '.png"/>  ' + cloud + '</li>';
+      });
+
       return '<div class="hoverinfo">' +
         '<h3>'+ data.country +' <img src="/images/flag/' + data.flag + '"/></h3>' +
         '<P><b>Region</b> <br>'+ data.location +'</P>' +
         '<h3>Cloud Provider</h3>' +
-        '<ul>' +
-        '<li>'+ data.cloud + '</li>'+
-        '</ul>' +
+        '<ul>' + liCloud + '</ul>' +
         ' </div>'
     }
   });
