@@ -34,7 +34,7 @@
   box-shadow: 0 42px 112px 0 rgba(240, 244, 253, 0.25), 0 30px 42px 0 rgba(156, 154, 154, 0.22) !important;
   h3 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     color: #424770;
     display: inline-block;
     margin: 0 0 10px 0;
@@ -51,6 +51,10 @@
     letter-spacing: 0;
     margin: 0 0 10px 0;
     line-height: 25px;
+    b {
+      white-space: nowrap;
+      font-size: 14px;
+    }
   }
   ul {
     padding: 0;
@@ -60,13 +64,7 @@
       display: block;
       color: #424770;
       font-size: 16px;
-      //&:before {
-      //  font-family: FontAwesome;
-      //  content: "\f18e";
-      //  color: #dbddef;
-      //  font-size: 14px;
-      //  padding-right: 8px;
-      //}
+      padding:0 0 10px  0 ;
     }
   }
 }

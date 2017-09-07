@@ -149,23 +149,544 @@ s0.parentNode.insertBefore(s1,s0);
   });
   bubble_map.bubbles([
     {
-      cloud: 'aws',
-      radius: 10,
-      location: ['Hangzhou', 'a', 'b'],
-      country: 'BGD',
-      fillKey: 'bubbleColor',
-      latitude: 23.82178248,
-      longitude:90.40168762
-    },
-    {
       cloud: ['azure', 'aws', 'aliyun', 'digitalocean', 'gce', 'hetzner', 'linode', 'ovh'],
       country: 'USA',
       flag: 'us.png',
       location: 'Silicon Valley',
-      radius: 20,
+      radius: 6,
       fillKey: 'bubbleColor',
       latitude: 37.387474,
       longitude: -122.0575434
+    },
+    {
+      cloud: ['ovh'],
+      country: 'Canada',
+      flag: 'canada.png',
+      location: 'Beauharnois',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 45.315082,
+      longitude: -73.877903
+    },
+    {
+      cloud: ['ovh'],
+      country: 'France',
+      flag: 'france.png',
+      location: 'Strasbourg',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 48.573405,
+      longitude: 7.752111
+    },
+    {
+      cloud: ['ovh'],
+      country: 'France',
+      flag: 'france.png',
+      location: 'Gravelines',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 50.987070,
+      longitude: 2.125537
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Hangzhou',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 30.274084,
+      longitude: 120.155070
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Qingdao',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 36.067108,
+      longitude: 120.382609
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Beijing',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 39.904200,
+      longitude: 116.407396
+    },
+    {
+      cloud: ['aliyun','azure'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Hong kong',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 22.396428,
+      longitude: 114.109497
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Shenzhen',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 22.543096,
+      longitude: 114.057865
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Shanghai',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 31.230390,
+      longitude: 121.473702
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Silicon Valley',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 37.387474,
+      longitude: -122.057543
+    },
+    {
+      cloud: ['aliyun','azure','aws'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Virginia',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 37.431573,
+      longitude: -78.656894
+    },
+    {
+      cloud: ['aliyun','azure','aws','digitalocean','linode'],
+      country: 'Singapore',
+      flag: 'singapore.png',
+      location: 'Singapore',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 1.352083,
+      longitude: 103.819836
+    },
+    {
+      cloud: ['aliyun'],
+      country: 'Dubai',
+      flag: 'dubai.png',
+      location: 'Dubai',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 25.204849,
+      longitude: 55.270783
+    },
+    {
+      cloud: ['aliyun','azure','aws','linode'],
+      country: 'Japan',
+      flag: 'japan.png',
+      location: 'Tokyo',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 35.689487,
+      longitude: 139.691706
+    },
+    {
+      cloud: ['aliyun','aws'],
+      country: 'Australia',
+      flag: 'australia.png',
+      location: 'Sydney',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: -33.868820,
+      longitude: 151.209296
+    },
+    {
+      cloud: ['aws'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Ohio',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 40.417287,
+      longitude: -82.907123
+    },
+    {
+      cloud: ['aws','azure'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'California',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 36.778261,
+      longitude: -119.417932
+    },
+    {
+      cloud: ['aws'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Oregon',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 43.804133,
+      longitude: -120.554201
+    },
+    {
+      cloud: ['aws'],
+      country: 'Ireland',
+      flag: 'ireland.png',
+      location: 'Ireland',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 53.142367,
+      longitude: -7.692054
+    },
+    {
+      cloud: ['aws','azure'],
+      country: 'Ireland',
+      flag: 'ireland.png',
+      location: 'Ireland',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 53.142367,
+      longitude: -7.692054
+    },
+    {
+      cloud: ['aws','azure','digitalocean','linode'],
+      country: 'UK',
+      flag: 'uk.png',
+      location: 'London',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 51.507351,
+      longitude: -0.127758
+    },
+    {
+      cloud: ['aws','azure'],
+      country: 'Brazil',
+      flag: 'brazil.png',
+      location: 'Sao Paulo State',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: -23.543179,
+      longitude: -46.629185
+    },
+    {
+      cloud: ['aws'],
+      country: 'India',
+      flag: 'india.png',
+      location: 'Mumbai',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 19.075984,
+      longitude: 72.877656
+    },
+    {
+      cloud: ['aws','digitalocean','linode'],
+      country: 'Germany',
+      flag: 'germany.png',
+      location: 'Frankfurt',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 50.110922,
+      longitude: 8.682127
+    },
+    {
+      cloud: ['azure'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Iowa',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 41.878003,
+      longitude: -93.097702
+    },
+    {
+      cloud: ['azure'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Illinois',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 40.633125,
+      longitude: -89.398528
+    },
+    {
+      cloud: ['azure','linode'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Texas',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 31.968599,
+      longitude: -99.901813
+    },
+    {
+      cloud: ['azure'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'West Centra',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 41.076064,
+      longitude: -85.150529
+    },
+    {
+      cloud: ['azure'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'West',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 5.463816,
+      longitude: 10.800005
+    },
+    {
+      cloud: ['azure'],
+      country: 'Canada',
+      flag: 'canada.png',
+      location: 'Québec City',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 46.813878,
+      longitude: -71.207981
+    },
+    {
+      cloud: ['azure'],
+      country: 'Canada',
+      flag: 'canada.png',
+      location: 'Toronto',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 43.653226,
+      longitude: -79.383184
+    },
+    {
+      cloud: ['azure'],
+      country: 'Netherlands',
+      flag: 'netherlands.png',
+      location: 'Netherlands',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 52.132633,
+      longitude: 5.291266
+    },
+    {
+      cloud: ['azure'],
+      country: 'UK',
+      flag: 'uk.png',
+      location: 'Cardiff',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 51.481581,
+      longitude: -3.179090
+    },
+    {
+      cloud: ['azure'],
+      country: 'Australia',
+      flag: 'australia.png',
+      location: 'New South Wales',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: -31.253218,
+      longitude: 146.921099
+    },
+    {
+      cloud: ['azure'],
+      country: 'Australia',
+      flag: 'australia.png',
+      location: 'Victoria',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: -37.471308,
+      longitude: 144.785153
+    },
+    {
+      cloud: ['azure'],
+      country: 'Japan',
+      flag: 'japan.png',
+      location: 'Osaka',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 34.693738,
+      longitude: 135.502165
+    },
+    {
+      cloud: ['digitalocean'],
+      country: 'Japan',
+      flag: 'japan.png',
+      location: 'Osaka',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 34.693738,
+      longitude: 135.502165
+    },
+    {
+      cloud: ['digitalocean'],
+      country: 'Netherlands',
+      flag: 'netherlands.png',
+      location: 'Amsterdam',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 52.370216,
+      longitude: 4.895168
+    },
+    {
+      cloud: ['digitalocean'],
+      country: 'India',
+      flag: 'india.png',
+      location: 'Bangalore',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 12.971599,
+      longitude: 77.594563
+    },
+    {
+      cloud: ['digitalocean'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'New York',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 40.712784,
+      longitude: -74.005941
+    },
+    {
+      cloud: ['digitalocean'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'San Francisco',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 37.774929,
+      longitude: -122.419416
+    },
+    {
+      cloud: ['gce'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Eastern',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 27.993401,
+      longitude: -80.630215
+    },
+    {
+      cloud: ['gce'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Western',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 0.258052,
+      longitude: 30.527910
+    },
+    {
+      cloud: ['gce'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Central',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 32.778651,
+      longitude: -108.153234
+    },
+    {
+      cloud: ['gce'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Western',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 0.258052,
+      longitude: 30.527910
+    },
+    {
+      cloud: ['gce'],
+      country: 'China',
+      flag: 'china.png',
+      location: 'Taiwan',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 23.697810,
+      longitude: 120.960515
+    },
+    {
+      cloud: ['gce'],
+      country: 'Japan',
+      flag: 'japan.png',
+      location: 'Japan',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 36.204824,
+      longitude: 138.252924
+    },
+    {
+      cloud: ['hetzner'],
+      country: 'Germany',
+      flag: 'germany.png',
+      location: 'Germany',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 51.165691,
+      longitude: 10.451526
+    },
+    {
+      cloud: ['linode'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Dallas',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 32.776664,
+      longitude: -96.796988
+    },
+    {
+      cloud: ['linode'],
+      country: 'USA',
+      flag: 'us.png',
+      location:'Fremont, CA',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 37.548270,
+      longitude: -121.988572
+    },
+    {
+      cloud: ['linode'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Atlanta, GA',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 33.748995,
+      longitude: -84.387982
+    },
+    {
+      cloud: ['linode'],
+      country: 'USA',
+      flag: 'us.png',
+      location: 'Newark, NJ',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 40.735657,
+      longitude: -74.172367
+    },
+    {
+      cloud: ['linode'],
+      country: 'UK',
+      flag: 'uk.png',
+      location: 'England',
+      radius: 6,
+      fillKey: 'bubbleColor',
+      latitude: 52.355518,
+      longitude: -1.174320
     }
 
   ], {
@@ -185,7 +706,7 @@ s0.parentNode.insertBefore(s1,s0);
       return '<div class="hoverinfo">' +
         '<h3>'+ data.country +' <img src="/images/flag/' + data.flag + '"/></h3>' +
         '<P><b>Region</b> <br>'+ data.location +'</P>' +
-        '<h3>Cloud Provider</h3>' +
+        '<P><b>Cloud Provider</b></P>' +
         '<ul>' + liCloud + '</ul>' +
         ' </div>'
     }
