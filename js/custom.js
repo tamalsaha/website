@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $('body').on('click', function (e) {
-    debugger;
     $('.tip_wrap').removeClass('active');
     if ($(e.target).hasClass('tip_wrap')) {  // click on tip_wrap
       $(e.target).addClass('active');
