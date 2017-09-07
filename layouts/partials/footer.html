@@ -138,12 +138,6 @@ s0.parentNode.insertBefore(s1,s0);
 <script>
   var bubble_map = new Datamap({
     element: document.getElementById("data-map"),
-    done: function (datamap) {
-      var svg = datamap.svg;
-      svg.selectAll('.datamaps-subunit').on('click', function(d) {
-        // d3.select(this).  // classed('active');
-      });
-    },
     geographyConfig: {
       popupOnHover: true,
       highlightOnHover: true
@@ -153,12 +147,6 @@ s0.parentNode.insertBefore(s1,s0);
      bubbleColor:'#7272e9'
     }
   });
-  /*
-  $('#data-map').on('click', '.bubbles', function () {
-    // alert('YESSSSS!');
-  });
-  */
-
   bubble_map.bubbles([
     {
       cloud: 'aws',
@@ -177,18 +165,12 @@ s0.parentNode.insertBefore(s1,s0);
       radius: 20,
       fillKey: 'bubbleColor',
       latitude: 37.387474,
-      longitude: 122.0575434
+      longitude: -122.0575434
     }
 
   ], {
     popupTemplate: function(geo, data) {
       // return '<div class="hoverinfo">Yield:' + data.yeild + 'Exploded on ' + data.date + ' by the '  + data.country + ' hello '  + data.significance + ''
-
-      function doSomethingOnHover(){
-        console.log("Hovering");
-      }
-
-      doSomethingOnHover();
 
       var liCloud = '';
       if (Array.isArray(data.cloud)) {
@@ -208,50 +190,6 @@ s0.parentNode.insertBefore(s1,s0);
         ' </div>'
     }
   });
-  //container is teh div on which the data map is made.
-  d3.selectAll('.datamaps-bubble').on('mouseout', function(info) {
-    console.log("out")
-    // do something
-  });
-
-  d3.selectAll('.datamaps-bubble').on('mouseover', function(info) {
-    console.log("enteredasdasd")
-    // do something
-  });
-  d3.selectAll('.datamaps-bubble').on('click', function (data) {
-    var liCloud = '';
-    if (Array.isArray(data.cloud)) {
-      data.cloud.forEach(function (cloud) {
-        liCloud += '<li><img src="/images/cloud-logo/' + cloud + '.png"/>  ' + cloud + '</li>';
-      });
-    } else {
-      liCloud += '<li><img src="/images/cloud-logo/' + data.cloud + '.png"/>  ' + data.cloud + '</li>';
-    }
-
-    var html = '<div class="hoverinfo">' +
-      '<h3>'+ data.country +' <img src="/images/flag/' + data.flag + '"/></h3>' +
-      '<P><b>Region</b> <br>'+ data.location +'</P>' +
-      '<h3>Cloud Provider</h3>' +
-      '<ul>' + liCloud + '</ul>' +
-      ' </div>';
-
-    $('.datamaps-hoverover').html(html);
-
-    // $(".hoverinfo").css("display", "block");
-    $(".datamaps-hoverover").css("display", "block");
-
-    // alert('>>>>S');
-  });
 </script>
-
-
-
-
-
-<!--<script>
-
-  var map = new Datamap({element: document.getElementById('data-map')});
-
-</script>-->
 </body>
 </html>
