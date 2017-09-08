@@ -1,10 +1,6 @@
-
-
 <!--====================================
             Start header arewa
 =====================================-->
-
-
 <footer>
     <div class="container">
         <div class="row">
@@ -14,9 +10,6 @@
                         <div class="ft-copy-right">
                             <P> KubeDB is released under <span> <a href="https://github.com/k8sdb/cli/blob/master/LICENSE">Apache 2 Licence</a> </span></P>
                         </div>
-                        <!--<img src="/images/ac-logo.svg">-->
-                        <!--AppsCode Inc.-->
-                        <!--<span> @ 2017</span>-->
                         <div class="github-star">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="white" class="mx-1 v-align-middle" viewBox="0 0 14 16"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
                             <span> with</span>
@@ -27,7 +20,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-6">
@@ -36,7 +28,6 @@
                         <ul>
                             <li class="hidden"><a class="issue-file" target="_blank" href="https://github.com/k8sdb"> <i class="fa fa-github"></i>File an Issue</a></li>
                             <li>
-                                <!-- Place this tag where you want the button to render. -->
                                 <a class="github-button" href="https://github.com/k8sdb/cli" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
                             </li>
                         </ul>
@@ -47,8 +38,6 @@
     </div>
 </footer>
 <!-- End our Project -->
-
-
 
 <script type="text/javascript">
     $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
@@ -69,20 +58,14 @@
         return false;
     });
 </script>
-
-
-
-
 <!--new cookie-->
 
 <div class="ac-cookies collapse cookie-notice">
     <button class="ac-cookies-ok accept-cookie">OK</button>
     <span class="ac-cookies-message">
         We use cookies to ensure that we give you the best experience on our website. By using this site, you agree to its use of cookies.
-        <!-- <a href="/legal/privacy-policy/" target="_blank" role="button">Learn more</a> -->
     </span>
 </div>
-
 
 </div><!-- End Page Wrapper, Full Width -->
 
@@ -125,10 +108,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<!--<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>-->
 
 <script src="/js/custom.min.js"></script>
 
@@ -582,11 +561,11 @@ s0.parentNode.insertBefore(s1,s0);
       cloud: ['gce'],
       country: 'USA',
       flag: 'us.png',
-      location: 'Western',
+      location: 'Western, WA',
       radius: 6,
       fillKey: 'bubbleColor',
-      latitude: 0.258052,
-      longitude: 30.527910
+      latitude: 48.733508,
+      longitude: -122.487302
     },
     {
       cloud: ['gce'],
@@ -681,8 +660,6 @@ s0.parentNode.insertBefore(s1,s0);
 
   ], {
     popupTemplate: function(geo, data) {
-      // return '<div class="hoverinfo">Yield:' + data.yeild + 'Exploded on ' + data.date + ' by the '  + data.country + ' hello '  + data.significance + ''
-
       var liCloud = '';
       if (Array.isArray(data.cloud)) {
         data.cloud.forEach(function (cloud) {
@@ -691,8 +668,6 @@ s0.parentNode.insertBefore(s1,s0);
       } else {
         liCloud += '<li><img src="/images/cloud-logo/' + data.cloud + '.png"/>  ' + data.cloud + '</li>';
       }
-
-
       return '<div class="hoverinfo">' +
         '<h3>'+ data.country +' <img src="/images/flag/' + data.flag + '"/></h3>' +
         '<P><b>Region</b> <br>'+ data.location +'</P>' +

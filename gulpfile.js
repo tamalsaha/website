@@ -51,7 +51,9 @@ const paths = {
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/featherlight/release/featherlight.min.js',
       'node_modules/jquery-validation/dist/jquery.validate.js',
-      'node_modules/js-cookie/src/js.cookie.js'
+      'node_modules/js-cookie/src/js.cookie.js',
+      'node_modules/d3/d3.min.js',
+      'node_modules/topojson/dist/topojson.min.js'
 // 'node_modules/typed.js/dist/typed.min.js'
     ],
     ie: [

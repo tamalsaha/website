@@ -137,14 +137,14 @@ table {
   color: $CodeMirror-color !important;
   font-size: 16px !important;
 }
+
 pre {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .cm-s-default .cm-comment {
-  color:$CodeMirror-comment !important;
+  color: $CodeMirror-comment !important;
 }
-
 
 .CodeMirror-gutters {
   background-color: #f2feef !important;
