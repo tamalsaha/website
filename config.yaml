@@ -1,4 +1,4 @@
-title: Making running production-grade databases easy on Kubernetes
+title: Run production-grade databases easily on Kubernetes
 baseurl: https://kubedb.com
 languageCode: en-us
 pluralizeListTitles: false
@@ -13,7 +13,7 @@ taxonomies:
 params:
   author: KubeDB Authors
   date_format: Mon, Jan 2, 2006
-  description: Making running production-grade databases easy on Kubernetes
+  description: Run production-grade databases easily on Kubernetes
   email: support@appscode.com
   logo: /images/logo.svg
   twitter_url: https://twitter.com/KubeDB
