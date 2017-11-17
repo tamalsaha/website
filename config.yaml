@@ -1,4 +1,4 @@
-title: Kubernetes ready production-grade Databases
+title: Making running production-grade databases easy on Kubernetes
 baseurl: https://kubedb.com
 languageCode: en-us
 pluralizeListTitles: false
@@ -13,10 +13,10 @@ taxonomies:
 params:
   author: KubeDB Authors
   date_format: Mon, Jan 2, 2006
-  description: Kubernetes ready production-grade Databases by AppsCode
+  description: Making running production-grade databases easy on Kubernetes
   email: support@appscode.com
   logo: /images/logo.svg
-  twitter_url: https://twitter.com/AppsCodeHQ
+  twitter_url: https://twitter.com/KubeDB
   facebook_url: https://www.facebook.com/appscode
   github_url: https://github.com/k8sdb
   docker_url: https://hub.docker.com/u/kubedb
@@ -41,9 +41,9 @@ menu:
         Pre: "<i class='fa fa-twitter'></i>"
         Weight: 4
         Identifier: "twitter"
-        URL: "https://twitter.com/AppsCodeHQ"
+        URL: "https://twitter.com/KubeDB"
       - Name:
         Pre: "<i class='fa fa-slack'></i>"
         Weight: 5
         Identifier: "slack"
-        URL: "https://slack.appscode.com/"
+        URL: "http://slack.kubernetes.io/"
