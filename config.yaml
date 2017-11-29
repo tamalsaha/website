@@ -18,7 +18,7 @@ params:
   logo: /images/logo.svg
   twitter_url: https://twitter.com/KubeDB
   facebook_url: https://www.facebook.com/appscode
-  github_url: https://github.com/k8sdb
+  github_url: https://github.com/kubedb
   docker_url: https://hub.docker.com/u/kubedb
   youtube_url: https://www.youtube.com/c/appscode
   contact_email: support@appscode.com
@@ -28,15 +28,15 @@ menu:
   main:
       - Name: "Install"
         Weight: 1
-        URL: https://github.com/k8sdb/cli/blob/master/docs/install.md
+        URL: https://github.com/kubedb/cli/blob/master/docs/install.md
       - Name: "Tutorials"
         Weight: 2
-        URL: https://github.com/k8sdb/cli/tree/master/docs/tutorials
+        URL: https://github.com/kubedb/cli/tree/master/docs/tutorials
       - Name:
         Pre: "<i class='fa fa-github'></i>"
         Weight: 3
         Identifier: "GitHub"
-        URL: "https://github.com/k8sdb/cli#kubedb"
+        URL: "https://github.com/kubedb/cli#kubedb"
       - Name:
         Pre: "<i class='fa fa-twitter'></i>"
         Weight: 4
