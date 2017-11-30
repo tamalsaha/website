@@ -48,3 +48,11 @@ menu:
       Weight: 5
       Identifier: "slack"
       URL: "http://slack.kubernetes.io/"
+    - Name: Elasticsearch
+      identifier: elasticsearch
+      parent: database
+      weight: 10
+    - Name: Postgres
+      identifier: postgres
+      parent: database
+      weight: 20

@@ -16,9 +16,25 @@
             <ul class="nav navbar-nav navbar-right">
                 {{ $currentNode := . }}
                 {{ range .Site.Menus.main }}
-                    <li>
-                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+
+                  {{ if .HasChildren }}
+                    <li class="dropdown {{ if $currentNode.IsMenuCurrent "main" . }} active {{end}}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
+                        <ul class="dropdown-menu {{ if $currentNode.IsMenuCurrent "main" . }} open {{ end }}">
+
+                            {{ range .Children }}
+                            <li {{ if $currentNode.IsMenuCurrent "main" . }} class="active" {{ end }}>
+                                <a href="{{ .URL }}">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+
+                        </ul>
                     </li>
+                  {{else}}
+                    <li>
+                      <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                    </li>
+                  {{ end }}
                 {{end}}
             </ul> <!-- top menu end-->
         </div> <!-- /.navbar-collapse -->
