@@ -11,3 +11,5 @@ build
 layouts/onebox/single.html
 layouts/signup/single.html
 rev-manifest.json
+content/docs/
+repos/
