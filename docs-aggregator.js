@@ -8,7 +8,7 @@ function(err, obj) {
       // clone repo
       const url = allProducts[key].url;
       const repoName = key;
-      shell.exec('git clone ' + url + ' ./repos/' + repoName);
+      shell.exec('git clone --progress --verbose' + url + ' ./repos/' + repoName);
       const docsDestRoot = path.join('../../content/docs');
       const versions = allProducts[repoName].versions;
       const versionsLen = versions.length;
