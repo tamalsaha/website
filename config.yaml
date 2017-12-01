@@ -30,9 +30,8 @@ menu:
       identifier: database
       Weight: 1
       URL: https://github.com/kubedb/cli/blob/master/docs/install.md
-    - Name: "Tutorials"
+    - Name: "Documentation"
       Weight: 2
-      URL: https://github.com/kubedb/cli/tree/master/docs/tutorials
     - Name:
       Pre: "<i class='fa fa-github'></i>"
       Weight: 3

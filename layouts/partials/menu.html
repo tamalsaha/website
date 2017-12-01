@@ -33,7 +33,11 @@
                     </li>
                   {{else}}
                     <li>
-                      <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                      {{ if eq .Name "Documentation" }}
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="/docs/{{ $latestVersion }}/tutorials/">{{ .Name }}</a>
+                      {{ else }}
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                      {{ end }}
                     </li>
                   {{ end }}
                 {{end}}
