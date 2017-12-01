@@ -1,64 +1,67 @@
 
 .top-menu {
-  .navbar-header {
-    .icon-bar {
+  .navbar-brand-logo {
+    width: 160px;
+    height: auto;
+    padding: 10px;
+    img.main-logo {
       display: block;
-      width: 30px;
-      height: 4px;
-      border-radius: 3px;
-      background: #fff;
     }
-
-    .navbar-brand-logo {
-      width: 160px;
-      height: auto;
-      padding: 10px;
-      img.main-logo {
-        display: block;
-      }
-      img.affix-logo {
-        display: none;
-      }
+    img.affix-logo {
+      display: none;
     }
   }
-  .navbar-list {
-    ul.navbar-nav {
-      padding: 0;
-      margin: 12px 0 0 0;
-      li {
-        padding: 0 5px;
-        a {
-          @media(max-width: 680px) {
-           text-align: center;
-          }
-          padding: 10px 20px;
-          color: #fff;
-          font-size: 14px;
-          font-weight: 700;
-          text-decoration: none;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          border-radius: 50px;
-          i {
-            font-size: 20px;
-          }
-          &.active {
-            background: rgba(0, 0, 0, .1);
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
-          }
-          &:hover {
-            background: rgba(0, 0, 0, .1);
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
-          }
-          &:focus {
-            background: rgba(0, 0, 0, .1);
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
-          }
+
+  .navbar-toggler {
+    color: #ffffff3d;
+    border-color: #ffffff3d;
+    padding: 1px 7px;
+  }
+
+  ul.navbar-nav {
+    li {
+      padding: 0 5px;
+      @media(max-width: 768px) {
+        text-align: center;
+      }
+      a {
+        @media(max-width: 768px) {
+          text-align: center;
+          border-radius: 0px;
+          display: block;
+        }
+        padding: 6px 20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        display: inline-block;
+        i {
+          font-size: 20px;
+        }
+        &.active {
+          background: rgba(0, 0, 0, .1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
+        }
+        &:hover {
+          background: rgba(0, 0, 0, .1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
+        }
+        &:focus {
+          background: rgba(0, 0, 0, .1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, .05);
         }
       }
     }
   }
 }
+
+
+
+  //////////
 
 .affix {
   position: fixed;
@@ -106,3 +109,42 @@
     }
   }
 }
+
+// new menu for BS 4
+
+
+// .navbar.affix-top,
+// .navbar.affix-bottom {
+//   position: static;
+// }
+
+// .navbar.affix{
+//   position: fixed;
+//   width: 100%;
+//   top: 0;
+//   z-index: 1;
+//   background: #fff;
+//   transition: all .35s ease;
+// }
+
+// #sidemenu.affix-top, #sidemenu.affix {
+//   position: static;
+// }
+
+// #sidemenu.affix-bottom {
+//   position: relative;
+// }
+
+// @media (min-width: 768px) {
+//     #sidemenu.affix {
+//       position: fixed;
+//       top: 40px;
+//     }
+// }
+
+// #sidemenu .nav-link.active,
+// #sidemenu .nav-link:hover,
+// #sidemenu .nav-link:focus{
+//     color: #111;
+//     border-bottom: 1px #000 dashed;
+// }
