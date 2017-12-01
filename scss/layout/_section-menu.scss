@@ -15,11 +15,13 @@
                     list-style: none;
                     &.product-name {
                         >a {
-                            background: #94abdc;
+                            text-decoration: none;
+                            background: #8e8ff3;
                             color: #fff;
                             &:hover {
+                                text-decoration: none;
+                                background: #8e8ff3;
                                 color: #fff;
-                                background: #94abdc;
                             }
                         }
                     }
@@ -27,28 +29,29 @@
                         color: #60609a;
                         font-weight: 600;
                         font-size: 16px;
-                        padding: 15px 20px;
+                        padding: 10px 20px;
                         display: block;
                         &:hover {
-                            color: #33335c;
                             text-decoration: none;
-                            background: #eaf0ff;
+                            background: #8e8ff3;
+                            color: #fff;
                         }
                         &:focus {
-                            color: #33335c;
                             text-decoration: none;
-                            background: #eaf0ff;
+                            background: #8e8ff3;
+                            color: #fff;
                         }
                         &:active {
-                            color: #33335c;
                             text-decoration: none;
-                            background: #eaf0ff;
+                            background: #8e8ff3;
+                            color: #fff;
                         }
                     }
                     &.active {
                         >a {
                             text-decoration: none;
-                            background: #eaf0ff;
+                            background: #8e8ff3;
+                            color: #fff;
                         }
                     }
                     .dropdown-menu {
