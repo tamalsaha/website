@@ -2,7 +2,6 @@
 
 {{ $currentNode := . }}
 {{ $menu := .Params.menu_name }}
-
 <section id="inner-header">
     {{ partial "menu.html" . }}
     <div class="header text-center">
@@ -45,11 +44,11 @@
                   {{ end }}
                 {{ end }}
             {{ end }}
-            <!-- end left menu headline -->
 
           <div class="current-page">
             <a class="item">{{ $.Scratch.Get "leftMenuHeadline" }}</a>
           </div>
+          <!-- end left menu headline -->
 
           {{ if isset .Params "menu_name" }}
             {{ $sectionMenuId := .Params.section_menu_id }}
@@ -71,6 +70,7 @@
 
                               <!-- third child -> left menu level 1  -->
                               {{ range .Children }}
+{{ printf "%v" . }}
                                 <li><a href="{{ .URL }}" {{if $currentNode.IsMenuCurrent $menu . }}class="active"{{end}}> {{ .Name }}</a></li>
                               {{ end }}
 

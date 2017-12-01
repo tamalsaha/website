@@ -36,7 +36,7 @@
 
             {{ end }}
               
-              {{ $currentBranch := (index (split .Params.menu_name "_") 2) }}
+              {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
               {{  $versions := (index $productJson "versions" ) }}
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Versions <span class="caret"></span></a>
