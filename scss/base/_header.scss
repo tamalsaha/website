@@ -1,11 +1,6 @@
-
-
-
-
 #top-header {
   height: 500px;
   background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg, #4949A3, #7272E9, #4d4dcb) no-repeat scroll center center/cover;
-  //background: linear-gradient(-12deg,#7795f8 50%,#6772e5 80%,#555abf);
   .header {
     padding: 80px 0;
 
@@ -14,7 +9,7 @@
       line-height: 40px;
       margin-bottom: 15px;
       font-weight: 700;
-      color: $white;
+      color: #fff;
       text-transform: capitalize;
       letter-spacing: 1px;
     }
@@ -24,16 +19,14 @@
       letter-spacing: 1px;
       font-weight: 500;
       font-size: 18px;
-      color: $white;
+      color: #fff;
     }
   }
 }
-
-
 // inner-header
 
 #inner-header {
-  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(15deg,#035af6 10%,#008af8 100%,#0088ff) no-repeat scroll center center/cover;
+  background: url(/images/bg.svg) no-repeat scroll center center/cover border-box,-webkit-linear-gradient(45deg,#4949a3,#7272e9,#4d4dcb) no-repeat scroll center center/cover;
   .header {
     padding: 80px 0;
     h1 {
@@ -41,7 +34,7 @@
       line-height: 40px;
       margin-bottom: 15px;
       font-weight: 700;
-      color: $white;
+      color: #fff;
       text-transform: capitalize;
       letter-spacing: 1px;
     }

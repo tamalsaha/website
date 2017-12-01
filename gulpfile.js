@@ -39,6 +39,7 @@ const paths = {
       'node_modules/codemirror/lib/codemirror.js',
       'node_modules/codemirror/mode/javascript/javascript.js',
       'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/popper.js/dist/umd/popper.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/featherlight/release/featherlight.min.js',
       'node_modules/jquery-validation/dist/jquery.validate.js',

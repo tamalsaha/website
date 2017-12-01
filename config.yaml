@@ -17,10 +17,10 @@ params:
   email: support@appscode.com
   logo: /images/logo.svg
   twitter_url: https://twitter.com/KubeDB
-  facebook_url: https://www.facebook.com/appscode
+  slack_url: https://slack.appscode.com/
   github_url: https://github.com/kubedb
-  docker_url: https://hub.docker.com/u/kubedb
   youtube_url: https://www.youtube.com/c/appscode
+  docker_url: https://hub.docker.com/u/kubedb
   contact_email: support@appscode.com
   sales_email: sales@appscode.com
   contact_phone: +1 (650) 241-8486

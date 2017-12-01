@@ -12,7 +12,6 @@
           {{ $productJson := (index $.Site.Data.products.products $productName ) }}
 
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item product-name"><a href="/products/{{ .Params.product_name }}">{{ title .Params.product_name }}</a></li>
             {{ $sectionMenuId := .Params.section_menu_id }}
             {{ if isset .Params "menu_name" }}
 
@@ -55,7 +54,7 @@
         </ul>
 
         {{ $urlToken := (split .File.Path "/") }}
-        <a href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank"><button class="btn btn-outline-success"><i class="fa fa-github"></i> Edit this page</button></a>
+        <a class="" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank"><button class="btn btn-outline-success"><i class="fa fa-github"></i> Edit this page</button></a>
       {{ end }}
 
       </div>
