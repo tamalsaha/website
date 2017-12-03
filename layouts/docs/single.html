@@ -25,6 +25,21 @@
       <div class="row">
        <div class="default-sidbar-left">
          <div class="col-12">
+
+         <!--  Custom Google Search -->
+         <div id="custom-search-input">
+              <div class="input-group">
+                <input type="text" class="search-query form-control" placeholder="Search" onkeydown="if (event.keyCode==13) window.location.replace('/docs/search/?q=' + this.value)" />
+                   <span class="input-group-btn">
+                       <button class="btn btn-danger" type="button">
+                         <i class="fa fa-search" onclick="window.location.replace('/docs/search/?q=' + $('.search-query').val())"></i>
+                       </button>
+                   </span>
+              </div>
+          </div>
+         <!-- End  Custom Google Search -->
+
+
             {{ if isset .Params "menu_name" }}
               {{ $sectionMenuId := .Params.section_menu_id }}
                 {{ range (index .Site.Menus .Params.menu_name) }}
