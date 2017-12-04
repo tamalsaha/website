@@ -36,7 +36,7 @@ menu:
       Pre: "<i class='fa fa-github'></i>"
       Weight: 3
       Identifier: "GitHub"
-      URL: "https://github.com/kubedb/cli#kubedb"
+      URL: "https://github.com/kubedb"
     - Name:
       Pre: "<i class='fa fa-twitter'></i>"
       Weight: 4
@@ -55,3 +55,4 @@ menu:
       identifier: postgres
       parent: database
       weight: 20
+
