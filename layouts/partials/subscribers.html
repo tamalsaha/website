@@ -5,6 +5,7 @@
         <p>Join thousands of subscribers and stay up-to-date on AppsCode.</p>
     </div>
 
+    <!--
     <div class="subscribers-body">
         <span class="hidden" role="ack"></span>
         <form class="navbar-form" role="email">
@@ -12,42 +13,17 @@
             <button type="submit" class="btn mail-subscribe">Subscribe</button>
         </form>
     </div>
+    -->
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup" class="subscribers-body">
+        <span class="hidden" role="ack"></span>
+        <form action="https://appscode.us17.list-manage.com/subscribe/post?u=feb2bf31969a951e7449048a3&amp;id=82fb19acb9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="navbar-form" target="_blank" novalidate role="email" role="email">
+            <div id="mc_embed_signup_scroll" class="subscribers-email">
+                <input id="mce-EMAIL" type="email" name="EMAIL" required class="form-control subscribe-email navbar-form" placeholder="Your work email address" required>
+                <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="btn mail-subscribe">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
 </section>
-
-
-<script>
-$(document).ready(function() {
-    $('.mail-subscribe').on('click', function(e) {
-        e.preventDefault();
-        const isFormValid = $('form').valid();
-        if (isFormValid) {
-            const email = $('.subscribe-email').val();
-            const url = 'https://api.appscode.com/mailinglist/v1beta1/subscribe/json';
-            $.ajax({
-                url: url,
-                crossDomain: true,
-                type: 'PUT',
-                dataType: 'JSON',
-                data: JSON.stringify({
-                    'email': email
-                }),
-                success(resp) {
-                    const statusCode = resp.status.code;
-                    if (statusCode === '0') {
-                        $('form[role="email"]').addClass('hidden');
-                        $('span[role="ack"]').text("Thanks for subscribing! We'll send you a welcome email shortly!").toggleClass('hidden');
-                    } else {
-                        $('form[role="email"]').addClass('hidden');
-                        $('span[role="ack"]').text(resp.status.message).toggleClass('hidden');
-                    }
-                },
-                error(xhr, status, err) {
-                    $('form[role="email"]').addClass('hidden');
-                    $('span[role="ack"]').text('Failed to connect to api server. Please try again later.').toggleClass('hidden');
-                    console.log('status: ', status, 'err: ', err);
-                }
-            });
-        }
-    });
-});
-</script>
