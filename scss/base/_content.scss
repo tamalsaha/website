@@ -67,8 +67,9 @@
     box-shadow: none;
     text-shadow: none;
     background: repeat-x #f7f7f7;
-    display: inline-block;
-    white-space: pre;
+    // display: inline-block;
+    word-wrap:break-word;
+    // white-space: pre;
     padding: 0 6.4px;
   }
 

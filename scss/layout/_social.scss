@@ -1,6 +1,8 @@
 #social {
-  background: $social-bg;
+  // background: $social-bg;
+  background: linear-gradient(45deg,#7272e9,#4d4dcb);
   padding: 30px;
+  text-align:center;
   .social-list {
     ul {
       padding: 0;
@@ -26,6 +28,7 @@
             vertical-align: middle;
           }
           .social-name {
+            text-align: left;
             h4 {
               color:$social-list-social-name;
               margin: 0;

@@ -1,10 +1,11 @@
 <sections id="product-section-menu">
   <nav class="navbar navbar-expand-lg navbar-light product-docs-navbar">
       <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler sectopn-toggler-nav" type="button" data-toggle="collapse" data-target="#section-menu-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse ac-product-docs" id="navbarSupportedContent">
+        <!-- <span><i class="fa fa-arrow-down"></i></span> -->
+      </span>
+      <div class="collapse navbar-collapse ac-product-docs" id="section-menu-nav">
         {{ $currentNode := . }}
         {{ $menu := .Params.menu_name }}
         {{ $productName := "cli" }}
@@ -54,7 +55,9 @@
         </ul>
 
         {{ $urlToken := (split .File.Path "/") }}
-        <a class="" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank"><button class="btn btn-outline-success"><i class="fa fa-github"></i> Edit this page</button></a>
+        <a class="edit-thisPage" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank">
+          <i class="fa fa-github"></i> Edit this page
+        </a>
       {{ end }}
 
       </div>

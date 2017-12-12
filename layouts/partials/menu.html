@@ -31,7 +31,7 @@
                       {{ if eq .Name "Documentation" }}
                         <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="/docs/{{ $latestVersion }}/getting-started/">{{ .Name }}</a>
                       {{ else }}
-                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" target="_blank" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
                       {{ end }}
                     </li>
                     {{ end }}
