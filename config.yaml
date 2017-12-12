@@ -18,7 +18,7 @@ params:
   logo: /images/logo.svg
   twitter_url: https://twitter.com/KubeDB
   slack_url: https://slack.appscode.com/
-  github_url: https://github.com/kubedb
+  issues_url: https://github.com/kubedb/project/issues/new
   youtube_url: https://www.youtube.com/c/appscode
   docker_url: https://hub.docker.com/u/kubedb
   contact_email: support@appscode.com

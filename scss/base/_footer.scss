@@ -87,9 +87,11 @@ footer {
                     margin-bottom: 20px;
                     a {
                         &.issue-file {
-                            color: #fff;
-                            background: linear-gradient(45deg, #7272E9, #4d4dcb);
+                            color: #8a81c3;
+                            font-weight: 700;
                             border-radius: 3px;
+                            background: #3a3750;
+                            border: 1px solid #000;
                         }
                         color: $white;
                         padding: 4px 10px;
@@ -157,11 +159,11 @@ a.back-to-top {
     cursor: pointer;
     padding: 0 15px;
     border-radius: 3px;
-    color: $white;
-    background-color: $ac-cookies-ok;
+    color: #6464dc;
+    background-color:$white;
     border: none;
     float: right;
-    font-weight: 600;
+    font-weight: bold;
     margin-top: 7px;
 }
 
