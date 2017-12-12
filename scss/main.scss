@@ -1,25 +1,29 @@
 // AppsCode || OneBox license Sass Theme
 // Author: AppsCode
-// Version: 0.0.1
+// Version: 0.0.2
 
 
 // BASE - Base styles, variables, mixins, etc
-  @import 'base/_color.scss';
-  @import 'base/_base.scss';
-  @import 'base/_body.scss';
-  @import 'base/_header.scss';
-  @import 'base/_menu.scss';
-  @import 'base/_content.scss';
-  @import 'base/_footer.scss';
+  @import 'base/color';
+  @import 'base/base';
+  @import 'base/body';
+  @import 'base/header';
+  @import 'base/menu';
+  @import 'base/content';
+  @import 'base/footer';
 
 // LAYOUT - Base styles, variables, etc
 
-  @import 'layout/_pricing.scss';
-  @import 'layout/_ft-signin.scss';
-  @import 'layout/_faq.scss';
-  @import 'layout/_subscribers.scss';
-  @import 'layout/_share.scss';
-  @import 'layout/_social.scss';
-  @import 'layout/_product.scss';
-  @import 'layout/_signin.scss';
+  @import 'layout/pricing';
+  @import 'layout/ft-signin';
+  @import 'layout/faq';
+  @import 'layout/subscribers';
+  @import 'layout/social';
+  @import 'layout/share';
+  @import 'layout/product';
+  @import 'layout/signin';
+  @import 'layout/dropdown';
+  @import 'layout/docs';
+  @import 'layout/sidbar';
+  @import 'layout/section-menu';
 

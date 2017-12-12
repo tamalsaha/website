@@ -1,26 +1,43 @@
-<nav class="top-menu" data-spy="affix" data-offset-top="100">
+{{ $latestVersion:= (index $.Site.Data.products.products.cli "latestVersion") }}
+<nav class="navbar navbar-expand-lg navbar-dark  top-menu" data-toggle="affix">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand navbar-brand-logo" href="/">
-                <img class="main-logo" src="/images/logo.svg" alt="AppsCode. {{ .Site.Params.description }}">
-                <img class="affix-logo" src="/images/logo-color.svg" alt="AppsCode. {{ .Site.Params.description }}">
-            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-list" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+
+        <a class="navbar-brand navbar-brand-logo" href="/">
+            <img class="main-logo " src="/images/logo.svg" alt="AppsCode. {{ .Site.Params.description }}">
+            <img class="affix-logo" src="/images/logo-color.svg" alt="AppsCode. {{ .Site.Params.description }}">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 {{ $currentNode := . }}
                 {{ range .Site.Menus.main }}
-                    <li>
-                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+        
+                    {{ if .HasChildren }}
+                    <li class="dropdown {{ if $currentNode.IsMenuCurrent "main" . }} active {{end}}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }}<span class="caret"></span></a>
+                        <ul class="dropdown-menu {{ if $currentNode.IsMenuCurrent "main" . }} open {{ end }}">
+                            {{ range .Children }}
+                            <li {{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} class="active" {{ end }}>
+                                <a href="/docs/{{ $latestVersion }}/tutorials/{{ .Identifier }}/ ">{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
                     </li>
-                {{end}}
-            </ul> <!-- top menu end-->
-        </div> <!-- /.navbar-collapse -->
-    </div> <!-- /.container-fluid -->
+                    {{else}}
+                    <li>
+                      {{ if eq .Name "Documentation" }}
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="/docs/{{ $latestVersion }}/getting-started/">{{ .Name }}</a>
+                      {{ else }}
+                        <a class="{{if or ($currentNode.IsMenuCurrent "main" .) (eq (lower $currentNode.Section) (lower .Name)) }}  {{end}}" href="{{.URL}}">{{ .Pre }}{{ .Name }}</a>
+                      {{ end }}
+                    </li>
+                    {{ end }}
+                {{end}}  
+            </ul>            
+        </div>
+    </div>
 </nav>
+

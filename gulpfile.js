@@ -39,6 +39,7 @@ const paths = {
       'node_modules/codemirror/lib/codemirror.js',
       'node_modules/codemirror/mode/javascript/javascript.js',
       'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/popper.js/dist/umd/popper.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/featherlight/release/featherlight.min.js',
       'node_modules/jquery-validation/dist/jquery.validate.js',
@@ -91,6 +92,12 @@ const paths = {
     ],
     srcDir: 'fonts',
     destDir: 'build/fonts'
+  },
+
+  json: {
+    files: ['products.json'],
+    srcDir: 'products.json',
+    destDir: 'data/'
   }
 };
 
@@ -140,7 +147,7 @@ gulp.task('css:prod', (done) => {
 });
 
 /* Copies files to the distribution directory */
-['images', 'fonts', 'static'].forEach((fileType) => {
+['images', 'fonts', 'static', 'json'].forEach((fileType) => {
   gulp.task(fileType, () => gulp.src(paths[fileType].files)
       .pipe(gulp.dest(paths[fileType].destDir)));
 });
@@ -303,7 +310,7 @@ gulp.task('hugo:serve', () => {
 ['dev', 'prod'].forEach((env) => {
   gulp.task(env, (done) => {
     // Stop using firebase-tools directly until https://github.com/firebase/firebase-tools/issues/136
-    runSequence('clean', ['copy:js_global', 'css:prod', 'images', 'fonts', 'static'], 'layouts', `hugo:${env}`, (error) => {
+    runSequence('clean', ['copy:js_global', 'css:prod', 'images', 'fonts', 'json', 'static'], 'layouts', `hugo:${env}`, (error) => {
       done(error && error.err);
     });
   });
@@ -311,7 +318,7 @@ gulp.task('hugo:serve', () => {
 
 // local
 gulp.task('default', (done) => {
-  runSequence('clean', 'copy:js_global', ['css:dev', 'images', 'fonts', 'static'], 'layouts', 'watch', 'hugo:serve', (error) => {
+  runSequence('clean', 'copy:js_global', ['css:dev', 'images', 'fonts', 'json', 'static'], 'layouts', 'watch', 'hugo:serve', (error) => {
     done(error && error.err);
   });
 });
