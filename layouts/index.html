@@ -25,9 +25,9 @@
 
    <section class="get-installation">
       <div class="container">
-         <div class="row">
-            <div class="col-md-4">
-               <div class="installation-content">
+         <div class="row justify-content-center">
+            <div class="col-md-8">
+               <div class="installation-content text-center">
                   <h2>Quick installation</h2>
                   <P>
                     Download pre-built binaries from <a href="https://github.com/kubedb/cli/releases">kubedb/cli Github releases</a>
@@ -35,41 +35,38 @@
                   </P>
                </div>
             </div>
-            <div class="col-md-8">
-               <div class="installation-pre-area">
-                  <ul class="nav nav-tabs tab-install" role="tablist">
-                     <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
-                     <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
-                  </ul>
-                  <!-- Tab panes -->
-                  <div class="tab-content tab-install-data">
-                     <div class="tab-pane active" id="linux">
-                        <textarea class="installation-pre-code">
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="installation-pre-area">
+                   <ul class="nav nav-tabs tab-install" role="tablist">
+                      <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
+                      <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
+                   </ul>
+                   <!-- Tab panes -->
+                   <div class="tab-content tab-install-data">
+                      <div class="tab-pane active" id="linux">
+                         <pre class="installation-pre-code"><code>
 $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.7.1/kubedb-linux-amd64 \
-  && chmod +x kubedb \
-  && sudo mv kubedb /usr/local/bin/
+    && chmod +x kubedb \
+    && sudo mv kubedb /usr/local/bin/
 
-$ kubedb init</textarea>
-                     </div>
-                     <div class="tab-pane" id="mac">
-                        <textarea class="installation-pre-code">
+$ kubedb init</code></pre>
+                      </div>
+                      <div class="tab-pane" id="mac">
+                         <pre class="installation-pre-code"><code>
 $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.7.1/kubedb-darwin-amd64 \
-  && chmod +x kubedb \
-  && sudo mv kubedb /usr/local/bin/
+    && chmod +x kubedb \
+    && sudo mv kubedb /usr/local/bin/
 
-$ kubedb init</textarea>
-                     </div>
-                  </div>
-               </div>
-            </div>
+$ kubedb init</code></pre>
+                      </div>
+                   </div>
+                </div>
+             </div>
          </div>
       </div>
    </section>
-
-
-<section>
-   <div class="con"></div>
-</section>
 
 
 
@@ -149,22 +146,6 @@ $ kubedb init</textarea>
 
 <div style="margin-top: 100px;"></div>
 
-
-
-<!-- <script>
-$('.navbar').affix({
-    offset:{
-        top: $('#header').outerHeight(),
-        bottom: $('#header').outerHeight() - 200
-    }
-});
-
-$('#sidemenu').affix({
-    offset:{
-        top: $('#header').outerHeight(),
-        bottom: $('footer').outerHeight() + 50
-    }
-});
 
 </script> -->
 {{ partial "footer.html" .}}
