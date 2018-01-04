@@ -40,7 +40,7 @@
               {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
               {{  $versions := (index $productJson "versions" ) }}
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Versions <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                 <ul id="versions" class="dropdown-menu">
                   {{ range $version := $versions }}
                     {{ $branch := (index $version "branch") }}
@@ -52,6 +52,16 @@
                   {{ end }}
                 </ul>
               </li>
+              <script>
+                $(document).ready(function() {
+                  var activeVersion = $('#versions li.active a').html();
+                  if (activeVersion) {
+                    $('#versions').closest('.dropdown').find('a.dropdown-toggle').html(activeVersion + '<span class="caret"></span>');
+                  } else {
+                    $('#versions').closest('.dropdown').find('a.dropdown-toggle').html('Versions <span class="caret"></span>');
+                  }
+                });
+              </script>
         </ul>
 
         {{ $urlToken := (split .File.Path "/") }}
