@@ -1,19 +1,13 @@
 {
   "products": {
     "cli": {
-      "url": "git@github.com:sajibcse68/cli.git",
+      "url": "https://github.com:appscode/cli.git",
       "versions": [
-          {
-              "branch": "master",
-              "isDocsAvailable": false
-          },
-          {
-              "branch": "0.7.2",
-              "isDocsAvailable": true
-          }
+          { "branch": "master", "isDocsAvailable": false },
+          { "branch": "0.8.0-rc.0", "isDocsAvailable": true }
       ],
-      "latestVersion": "0.7.2",
-      "githubUrl": "https://github.com/sajibcse68/cli"
+      "latestVersion": "0.8.0-rc.0",
+      "githubUrl": "https://github.com/appscode/cli"
     }
   }
 }

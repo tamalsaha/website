@@ -41,7 +41,7 @@
               {{  $versions := (index $productJson "versions" ) }}
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Versions <span class="caret"></span></a>
-                <ul id="versions" class="dropdown-menu" data-product-name={{.Params.product_name}}>
+                <ul id="versions" class="dropdown-menu">
                   {{ range $version := $versions }}
                     {{ $branch := (index $version "branch") }}
                     {{ if (index $version "isDocsAvailable") }}
