@@ -55,4 +55,20 @@ menu:
       identifier: postgres
       parent: database
       weight: 20
+    - Name: Memcached
+      identifier: memcached
+      parent: database
+      weight: 30
+    - Name: MongoDB
+      identifier: mongodb
+      parent: database
+      weight: 40
+    - Name: MySQL
+      identifier: mysql
+      parent: database
+      weight: 50
+    - Name: Redis
+      identifier: redis
+      parent: database
+      weight: 60
 
