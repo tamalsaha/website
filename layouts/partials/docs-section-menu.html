@@ -16,7 +16,7 @@
             {{ $sectionMenuId := .Params.section_menu_id }}
             {{ if isset .Params "menu_name" }}
 
-              {{ range (index .Site.Menus .Params.menu_name) }} 
+              {{ range (index .Site.Menus .Params.menu_name) }}
                 {{ if eq (string .Pre) "dropdown" }}
                   <li class="dropdown {{ if eq $sectionMenuId .Identifier }} active {{ end }}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
@@ -31,12 +31,12 @@
                   </li>
 
                 {{ else }}
-                  <li class="nav-item {{ if eq $sectionMenuId .Identifier }} active {{ end }}"><a href="{{ .URL }} ">{{ .Name }}</a></li>                  
+                  <li class="nav-item {{ if eq $sectionMenuId .Identifier }} active {{ end }}"><a href="{{ .URL }} ">{{ .Name }}</a></li>
                 {{ end }}
               {{ end }}
 
             {{ end }}
-              
+
               {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
               {{  $versions := (index $productJson "versions" ) }}
               <li class="dropdown">

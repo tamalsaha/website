@@ -43,8 +43,13 @@ menu:
       Identifier: "twitter"
       URL: "https://twitter.com/KubeDB"
     - Name:
-      Pre: "<i class='fa fa-slack'></i>"
+      Pre: "<i class='fa fa-users'></i>"
       Weight: 5
+      Identifier: "groups"
+      URL: "https://groups.google.com/forum/#!forum/kubedb"
+    - Name:
+      Pre: "<i class='fa fa-slack'></i>"
+      Weight: 6
       Identifier: "slack"
       URL: "http://slack.kubernetes.io/"
     - Name: Elasticsearch
@@ -55,4 +60,3 @@ menu:
       identifier: postgres
       parent: database
       weight: 20
-
