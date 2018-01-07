@@ -29,7 +29,7 @@ menu:
     - Name: "Database"
       identifier: database
       Weight: 1
-      URL: https://github.com/kubedb/cli/blob/master/docs/install.md
+      URL: https://kubedb.com/docs/latest/setup/install/
     - Name: "Documentation"
       Weight: 2
     - Name:
@@ -56,7 +56,23 @@ menu:
       identifier: elasticsearch
       parent: database
       weight: 10
-    - Name: Postgres
-      identifier: postgres
+    - Name: Memcached
+      identifier: memcached
       parent: database
       weight: 20
+    - Name: MongoDB
+      identifier: mongodb
+      parent: database
+      weight: 30
+    - Name: MySQL
+      identifier: mysql
+      parent: database
+      weight: 40
+    - Name: PostgreSQL
+      identifier: postgres
+      parent: database
+      weight: 50
+    - Name: Redis
+      identifier: redis
+      parent: database
+      weight: 60
