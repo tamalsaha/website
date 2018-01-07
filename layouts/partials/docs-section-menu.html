@@ -65,7 +65,8 @@
         </ul>
 
         {{ $urlToken := (split .File.Path "/") }}
-        <a class="edit-thisPage" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 3) }} {{- range after 3 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank">
+        {{ printf "%#v" $urlToken }}
+        <a class="edit-thisPage" href="{{ index $productJson "githubUrl"}}/edit/master/docs/{{ if (gt $urlToken 2) }} {{- range after 2 $urlToken -}}{{.}}/{{- end -}}{{ end }}" target="_blank">
           <i class="fa fa-github"></i> Edit this page
         </a>
       {{ end }}
