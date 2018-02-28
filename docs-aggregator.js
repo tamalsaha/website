@@ -50,7 +50,7 @@ jsonFile.readFile(productFile, function(err, obj) {
 
           replace({
             regex: '/docs/images',
-            replacement: `/products/${repoName}/${branch}/images`,
+            replacement: `/docs/${branch}/images`,
             paths: [`./repos/${repoName}/docs/`],
             recursive: true,
             silent: true

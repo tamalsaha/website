@@ -4,11 +4,12 @@
       "url": "https://github.com/kubedb/cli.git",
       "versions": [
           { "branch": "master", "hostDocs": false },
+          { "branch": "0.8.0-beta.2", "hostDocs": true },
           { "branch": "0.8.0-beta.0", "hostDocs": true },
           { "branch": "0.7.1", "hostDocs": false },
           { "branch": "0.6.0", "hostDocs": false }
       ],
-      "latestVersion": "0.8.0-beta.0",
+      "latestVersion": "0.8.0-beta.2",
       "githubUrl": "https://github.com/kubedb/cli"
     }
   }
