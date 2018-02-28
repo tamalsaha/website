@@ -10,7 +10,7 @@ menu_name: docs_0.8.0-beta.2
 section_menu_id: guides
 ---
 
-> New to KubeDB Postgres?  Quick start [here](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart).
+> New to KubeDB? Please start [here](/docs/0.8.0-beta.2/concepts/README).
 
 # Initialize PostgreSQL with Script
 
@@ -119,7 +119,7 @@ Events:
   5m          5m         1         Postgres operator   Normal     Successful   Successfully created Service
 ```
 
-Now lets connect to our Postgres `script-postgres`  using pgAdmin we have installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart.md#before-you-begin) tutorial.
+Now lets connect to our Postgres `script-postgres`  using pgAdmin we have installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart#before-you-begin) tutorial.
 
 Connection information:
 

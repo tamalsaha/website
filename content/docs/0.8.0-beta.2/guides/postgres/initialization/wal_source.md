@@ -9,7 +9,7 @@ menu:
 menu_name: docs_0.8.0-beta.2
 section_menu_id: guides
 ---
-> New to KubeDB Postgres?  Quick start [here](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart).
+> New to KubeDB? Please start [here](/docs/0.8.0-beta.2/concepts/README).
 
 > Don't know how to take continuous backup?  Check [tutorial](/docs/0.8.0-beta.2/guides/postgres/snapshot/continuous_archiving) on Continuous Archiving.
 
@@ -115,7 +115,7 @@ $ kubectl delete ns demo
 ## Next Steps
 
 - Learn about initializing [PostgreSQL with Script](/docs/0.8.0-beta.2/guides/postgres/initialization/script_source).
-- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_builtin_prometheus).
-- Monitor your PostgreSQL database with KubeDB using [CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_coreos_prometheus_operator).
+- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-builtin-prometheus).
+- Monitor your PostgreSQL database with KubeDB using [CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-coreos-prometheus-operator).
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

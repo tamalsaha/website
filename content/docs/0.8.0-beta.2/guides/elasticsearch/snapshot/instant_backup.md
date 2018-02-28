@@ -9,7 +9,7 @@ menu:
 menu_name: docs_0.8.0-beta.2
 section_menu_id: guides
 ---
-> New to KubeDB Elasticsearch?  Quick start [here](/docs/0.8.0-beta.2/guides/elasticsearch/quickstart).
+> New to KubeDB? Please start [here](/docs/0.8.0-beta.2/concepts/README).
 
 # KubeDB Snapshot
 
@@ -69,7 +69,7 @@ $ kubectl expose svc -n demo infant-elasticsearch --name=infant-es-exposed --por
 service "infant-es-exposed" exposed
 ```
 
-Check [this tutorial](/docs/0.8.0-beta.2/guides/elasticsearch/quickstart.md#connect-elasticsearch) to see how to connect Elasticsearch.
+Check [this tutorial](/docs/0.8.0-beta.2/guides/elasticsearch/quickstart/quickstart#connect-elasticsearch) to see how to connect Elasticsearch.
 
 Before taking backup, insert some data into this Elasticsearch.
 
@@ -304,8 +304,8 @@ $ kubectl delete ns demo
 - Learn how to [schedule backup](/docs/0.8.0-beta.2/guides/elasticsearch/snapshot/scheduled_backup)  of Elasticsearch database.
 - Learn about initializing [Elasticsearch with Snapshot](/docs/0.8.0-beta.2/guides/elasticsearch/initialization/snapshot_source).
 - Learn how to configure [Elasticsearch Topology](/docs/0.8.0-beta.2/guides/elasticsearch/clustering/topology).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_builtin_prometheus).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_coreos_prometheus_operator).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-builtin-prometheus).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-coreos-prometheus-operator).
 - Use [private Docker registry](/docs/0.8.0-beta.2/guides/elasticsearch/private-registry/using-private-registry) to deploy Elasticsearch with KubeDB.
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

@@ -21,7 +21,7 @@ At first, you need to have a Kubernetes cluster, and the kubectl command-line to
 
 Now, install KubeDB cli on your workstation and KubeDB operator in your cluster following the steps [here](/docs/0.8.0-beta.2/setup/install).
 
-This tutorial assumes that you have created a namespace `demo` and a snapshot `snapshot-infant`. Follow the steps [here](/docs/0.8.0-beta.2/guides/mysql/snapshot/backup-and-restore) to create a database and take [instant snapshot](/docs/0.8.0-beta.2/guides/mysql/snapshot/backup-and-restore.md#instant-backups), if you have not done so already. If you have changed the name of either namespace or snapshot object, please modify the YAMLs used in this tutorial accordingly.
+This tutorial assumes that you have created a namespace `demo` and a snapshot `snapshot-infant`. Follow the steps [here](/docs/0.8.0-beta.2/guides/mysql/snapshot/backup-and-restore) to create a database and take [instant snapshot](/docs/0.8.0-beta.2/guides/mysql/snapshot/backup-and-restore#instant-backups), if you have not done so already. If you have changed the name of either namespace or snapshot object, please modify the YAMLs used in this tutorial accordingly.
 
 Note that the yaml files that are used in this tutorial, stored in [docs/examples](https://github.com/kubedb/cli/tree/master/docs/examples) folder in GitHub repository [kubedb/cli](https://github.com/kubedb/cli).
 

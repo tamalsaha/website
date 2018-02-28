@@ -232,8 +232,8 @@ namespace "demo" deleted
 
 - Learn how to [schedule backup](/docs/0.8.0-beta.2/guides/elasticsearch/snapshot/scheduled_backup)  of Elasticsearch database.
 - Learn how to configure [Elasticsearch Topology](/docs/0.8.0-beta.2/guides/elasticsearch/clustering/topology).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_builtin_prometheus).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_coreos_prometheus_operator).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-builtin-prometheus).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-coreos-prometheus-operator).
 - Use [private Docker registry](/docs/0.8.0-beta.2/guides/elasticsearch/private-registry/using-private-registry) to deploy Elasticsearch with KubeDB.
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

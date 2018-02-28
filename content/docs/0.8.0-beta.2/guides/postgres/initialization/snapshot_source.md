@@ -66,7 +66,7 @@ Follow these steps to prepare this tutorial
     secret "gcs-secret" created
     ```
 
-- Take an instant backup, if not available. Follow [this](/docs/0.8.0-beta.2/guides/postgres/snapshot/instant_backup.md#instant-backup).
+- Take an instant backup, if not available. Follow [this](/docs/0.8.0-beta.2/guides/postgres/snapshot/instant_backup#instant-backup).
 
 ```console
 $ kubedb get snap -n demo --selector="kubedb.com/kind=Postgres,kubedb.com/name=script-postgres"
@@ -173,7 +173,7 @@ Events:
   35s         35s        1         Postgres operator   Normal     Successful           Successfully created Service
 ```
 
-Now lets connect to our Postgres `recovered-postgres`  using pgAdmin we have installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart.md#before-you-begin) tutorial.
+Now lets connect to our Postgres `recovered-postgres`  using pgAdmin we have installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart#before-you-begin) tutorial.
 
 Connection information:
 
@@ -218,7 +218,7 @@ $ kubectl delete ns demo
 - Learn about initializing [PostgreSQL with Script](/docs/0.8.0-beta.2/guides/postgres/initialization/script_source).
 - Learn how to [schedule backup](/docs/0.8.0-beta.2/guides/postgres/snapshot/scheduled_backup)  of PostgreSQL database.
 - Want to setup PostgreSQL cluster? Check how to [configure Highly Available PostgreSQL Cluster](/docs/0.8.0-beta.2/guides/postgres/clustering/ha_cluster)
-- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_builtin_prometheus).
-- Monitor your PostgreSQL database with KubeDB using [CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_coreos_prometheus_operator).
+- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-builtin-prometheus).
+- Monitor your PostgreSQL database with KubeDB using [CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-coreos-prometheus-operator).
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

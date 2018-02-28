@@ -10,7 +10,7 @@ menu_name: docs_0.8.0-beta.2
 section_menu_id: guides
 ---
 
-> New to KubeDB Postgres?  Quick start [here](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart).
+> New to KubeDB? Please start [here](/docs/0.8.0-beta.2/concepts/README).
 
 # Streaming Replication
 
@@ -151,7 +151,7 @@ Here,
 
 That means, you can only connect to *primary* sever.
 
-Now connect to this *primary* server Pod `ha-postgres-0` using pgAdmin installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart.md#before-you-begin) tutorial.
+Now connect to this *primary* server Pod `ha-postgres-0` using pgAdmin installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart#before-you-begin) tutorial.
 
 Connection information:
 
@@ -291,7 +291,7 @@ Here,
 
 That means, you can connect to both *primary* and *standby* sever. But these *hot standby* servers only accept read-only queries.
 
-Now connect to one of our *hot standby* servers Pod `hot-postgres-2` using pgAdmin installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart.md#before-you-begin) tutorial.
+Now connect to one of our *hot standby* servers Pod `hot-postgres-2` using pgAdmin installed in [quickstart](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart#before-you-begin) tutorial.
 
 Connection information:
 
@@ -334,7 +334,7 @@ $ kubectl delete ns demo
 ## Next Steps
 
 - Setup [Continuous Archiving](/docs/0.8.0-beta.2/guides/postgres/snapshot/continuous_archiving) in PostgreSQL using `wal-g`
-- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_builtin_prometheus).
-- Monitor your PostgreSQL database with KubeDB using [CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_coreos_prometheus_operator).
+- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-builtin-prometheus).
+- Monitor your PostgreSQL database with KubeDB using [CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-coreos-prometheus-operator).
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

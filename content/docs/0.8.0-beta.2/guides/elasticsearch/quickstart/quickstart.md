@@ -499,8 +499,8 @@ $ kubectl delete ns demo
 - Learn how to [schedule backup](/docs/0.8.0-beta.2/guides/elasticsearch/snapshot/scheduled_backup)  of Elasticsearch database.
 - Learn about initializing [Elasticsearch with Snapshot](/docs/0.8.0-beta.2/guides/elasticsearch/initialization/snapshot_source).
 - Learn how to configure [Elasticsearch Topology](/docs/0.8.0-beta.2/guides/elasticsearch/clustering/topology).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_builtin_prometheus).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_coreos_prometheus_operator).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-builtin-prometheus).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-coreos-prometheus-operator).
 - Detail concepts of [Elasticsearch object](/docs/0.8.0-beta.2/concepts/databases/elasticsearch).
 - Detail concepts of [Snapshot object](/docs/0.8.0-beta.2/concepts/snapshot).
 - Use [private Docker registry](/docs/0.8.0-beta.2/guides/elasticsearch/private-registry/using-private-registry) to deploy Elasticsearch with KubeDB.

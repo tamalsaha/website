@@ -9,7 +9,7 @@ menu:
 menu_name: docs_0.8.0-beta.2
 section_menu_id: guides
 ---
-> New to KubeDB Postgres?  Quick start [here](/docs/0.8.0-beta.2/guides/postgres/quickstart/quickstart).
+> New to KubeDB? Please start [here](/docs/0.8.0-beta.2/concepts/README).
 
 # Using Prometheus (CoreOS operator) with KubeDB
 
@@ -215,6 +215,6 @@ $ kubectl delete ns demo
 ```
 
 ## Next Steps
-- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_builtin_prometheus).
+- Monitor your PostgreSQL database with KubeDB using [built-in Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-builtin-prometheus).
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

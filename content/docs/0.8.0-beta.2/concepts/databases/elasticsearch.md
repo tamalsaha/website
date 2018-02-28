@@ -189,7 +189,11 @@ KubeDB supports taking periodic snapshots for Elasticsearch database. This is an
 
 
 ### spec.monitor
-To learn how to monitor Elasticsearch databases, please visit [here](/docs/0.8.0-beta.2/concepts/monitoring).
+
+Elasticsearch managed by KubeDB can be monitored with builtin-Prometheus and CoreOS-Prometheus operator out-of-the-box. To learn more,
+
+- [Monitor Elasticsearch with builtin Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-builtin-prometheus)
+- [Monitor Elasticsearch with CoreOS Prometheus operator](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-coreos-prometheus-operator)
 
 
 ### spec.resources
@@ -197,9 +201,7 @@ To learn how to monitor Elasticsearch databases, please visit [here](/docs/0.8.0
 
 
 ## Next Steps
-- Learn how to use KubeDB to run an Elasticsearch database [here](/docs/0.8.0-beta.2/guides/elasticsearch/overview).
+- Learn how to use KubeDB to run an Elasticsearch database [here](/docs/0.8.0-beta.2/guides/elasticsearch/README).
 - See the list of supported storage providers for snapshots [here](/docs/0.8.0-beta.2/concepts/snapshot).
-- Thinking about monitoring your database? KubeDB works [out-of-the-box with Prometheus](/docs/0.8.0-beta.2/guides/monitoring).
-- Learn how to use KubeDB in a [RBAC](/docs/0.8.0-beta.2/guides/rbac) enabled cluster.
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

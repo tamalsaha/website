@@ -70,8 +70,8 @@ aliases:
 - [PostgreSQL Clustering](/docs/0.8.0-beta.2/guides/postgres/clustering/ha_cluster) supported by KubeDB Postgres.
 - [Streaming Replication](/docs/0.8.0-beta.2/guides/postgres/clustering/streaming_replication) for PostgreSQL clustering.
 - [Continuous Archiving](/docs/0.8.0-beta.2/guides/postgres/snapshot/continuous_archiving) of Write-Ahead Log by `wal-g`.
-- Monitor your PostgreSQL database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_builtin_prometheus).
-- Monitor your PostgreSQL database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using_coreos_prometheus_operator).
+- Monitor your PostgreSQL database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-builtin-prometheus).
+- Monitor your PostgreSQL database with KubeDB using [`out-of-the-box` CoreOS Prometheus Operator](/docs/0.8.0-beta.2/guides/postgres/monitoring/using-coreos-prometheus-operator).
 - Use [private Docker registry](/docs/0.8.0-beta.2/guides/postgres/private-registry/using-private-registry) to deploy PostgreSQL with KubeDB.
 - Detail concepts of [Postgres object](/docs/0.8.0-beta.2/concepts/databases/postgres).
 - Detail concepts of [Snapshot object](/docs/0.8.0-beta.2/concepts/snapshot).

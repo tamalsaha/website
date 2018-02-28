@@ -447,7 +447,6 @@ spec:
 
 ## Next Steps
 
-- Learn how to use KubeDB to run a PostgreSQL database [here](/docs/0.8.0-beta.2/guides/postgres/overview).
-- Learn how to use KubeDB to run an Elasticsearch database [here](/docs/0.8.0-beta.2/guides/elasticsearch/overview).
+- Learn how to use KubeDB to manage various databases [here](/docs/0.8.0-beta.2/guides/README).
 - Wondering what features are coming next? Please visit [here](/docs/0.8.0-beta.2/roadmap).
 - Want to hack on KubeDB? Check our [contribution guidelines](/docs/0.8.0-beta.2/CONTRIBUTING).

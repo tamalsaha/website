@@ -9,7 +9,7 @@ menu:
 menu_name: docs_0.8.0-beta.2
 section_menu_id: guides
 ---
-> New to KubeDB Elasticsearch?  Quick start [here](/docs/0.8.0-beta.2/guides/elasticsearch/quickstart).
+> New to KubeDB? Please start [here](/docs/0.8.0-beta.2/concepts/README).
 
 # Using Prometheus (CoreOS operator) with KubeDB
 
@@ -232,7 +232,7 @@ namespace "demo" deleted
 - Learn how to [schedule backup](/docs/0.8.0-beta.2/guides/elasticsearch/snapshot/scheduled_backup)  of Elasticsearch database.
 - Learn about initializing [Elasticsearch with Snapshot](/docs/0.8.0-beta.2/guides/elasticsearch/initialization/snapshot_source).
 - Learn how to configure [Elasticsearch Topology](/docs/0.8.0-beta.2/guides/elasticsearch/clustering/topology).
-- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using_builtin_prometheus).
+- Monitor your Elasticsearch database with KubeDB using [`out-of-the-box` builtin-Prometheus](/docs/0.8.0-beta.2/guides/elasticsearch/monitoring/using-builtin-prometheus).
 - Detail concepts of [Elasticsearch object](/docs/0.8.0-beta.2/concepts/databases/elasticsearch).
 - Detail concepts of [Snapshot object](/docs/0.8.0-beta.2/concepts/snapshot).
 - Use [private Docker registry](/docs/0.8.0-beta.2/guides/elasticsearch/private-registry/using-private-registry) to deploy Elasticsearch with KubeDB.
