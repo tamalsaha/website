@@ -42,6 +42,7 @@
                    <ul class="nav nav-tabs tab-install" role="tablist">
                       <li class="active"><a href="#linux" aria-controls="linux" data-toggle="tab">Linux</a></li>
                       <li><a href="#mac" aria-controls="mac" data-toggle="tab">Mac</a></li>
+                      <li><a href="#helm-chart" aria-controls="helm-chart" data-toggle="tab">Helm Chart</a></li>
                    </ul>
                    <!-- Tab panes -->
                    <div class="tab-content tab-install-data">
@@ -62,6 +63,11 @@ $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.8.0-beta.2/ku
 
 $ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-beta.2/hack/deploy/kubedb.sh \
     | bash -s -- [--rbac] [--run-on-master]</code></pre>
+                      </div>
+                      <div class="tab-pane" id="helm-chart">
+                         <pre class="installation-pre-code"><code>
+$ helm repo update
+$ helm install stable/kubedb --name kubedb-operator --namespace kube-system</code></pre>
                       </div>
                    </div>
                 </div>
@@ -99,15 +105,16 @@ $ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-beta.2/hack/depl
                </a>
             </div>
          </div>
+
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0-beta.2/guides/cli/">
+               <a href="/docs/0.8.0-beta.2/guides/mysql/">
                   <div class="cc-icon">
-                     <img src="/images/logo-moscot.svg">
+                     <img src="/images/mysql.svg">
                   </div>
                   <div class="cc-content">
-                     <h3>CLI</h3>
-                     <p>This tutorial will show you how to use KubeDB cli to manage KubeDB objects.</p>
+                     <h3>MySQL</h3>
+                     <p>This tutorial will show you how to use KubeDB to run an MySQL database.</p>
                   </div>
                </a>
             </div>
@@ -115,26 +122,40 @@ $ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-beta.2/hack/depl
 
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0-beta.2/guides/monitoring/">
+               <a href="/docs/0.8.0-beta.2/guides/mongodb/">
                   <div class="cc-icon">
-                     <img src="/images/prometheus.svg">
+                     <img src="/images/mongodb.svg">
                   </div>
                   <div class="cc-content">
-                     <h3>Prometheus</h3>
-                     <p>This tutorial will show you how to monitor KubeDB databases.</p>
+                     <h3>MongoDB</h3>
+                     <p>This tutorial will show you how to use KubeDB to run an MongoDB database.</p>
                   </div>
                </a>
             </div>
          </div>
          <div class="col-md-4">
             <div class="getting-started">
-               <a href="/docs/0.8.0-beta.2/guides/rbac/">
+               <a href="/docs/0.8.0-beta.2/guides/memcached/">
                   <div class="cc-icon">
-                     <img src="/images/kubernets.svg">
+                     <img src="/images/memcached.svg">
                   </div>
                   <div class="cc-content">
-                     <h3>RBAC</h3>
-                     <p>This tutorial will show you how to use KubeDB in a RBAC enabled cluster.</p>
+                     <h3>Memcached</h3>
+                     <p>This tutorial will show you how to use KubeDB to run an Memcached database.</p>
+                  </div>
+               </a>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="getting-started">
+               <a href="/docs/0.8.0-beta.2/guides/redis/">
+                  <div class="cc-icon">
+                     <img src="/images/redis.svg">
+                  </div>
+                  <div class="cc-content">
+                     <h3>Redis</h3>
+                     <p>This tutorial will show you how to use KubeDB to run an Redis database.</p>
                   </div>
                </a>
             </div>
