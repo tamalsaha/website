@@ -48,27 +48,29 @@
                    <div class="tab-content tab-install-data">
                       <div class="tab-pane active" id="linux">
                          <pre class="installation-pre-code"><code>
+$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-rc.0/hack/deploy/kubedb.sh| bash
+
 $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.8.0-rc.0/kubedb-linux-amd64 \
     && chmod +x kubedb \
-    && sudo mv kubedb /usr/local/bin/
-
-$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-rc.0/hack/deploy/kubedb.sh \
-    | bash -s -- [--rbac] [--run-on-master]</code></pre>
+    && sudo mv kubedb /usr/local/bin/</code></pre>
                       </div>
                       <div class="tab-pane" id="mac">
                          <pre class="installation-pre-code"><code>
+$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-rc.0/hack/deploy/kubedb.sh| bash
+
 $ wget -O kubedb https://github.com/kubedb/cli/releases/download/0.8.0-rc.0/kubedb-darwin-amd64 \
     && chmod +x kubedb \
-    && sudo mv kubedb /usr/local/bin/
-
-$ curl -fsSL https://raw.githubusercontent.com/kubedb/cli/0.8.0-rc.0/hack/deploy/kubedb.sh \
-    | bash -s -- [--rbac] [--run-on-master]</code></pre>
+    && sudo mv kubedb /usr/local/bin/</code></pre>
                       </div>
                       <div class="tab-pane" id="helm-chart">
                          <pre class="installation-pre-code"><code>
+# download onessl from https://github.com/kubepack/onessl/releases/tag/0.3.0
 $ helm repo add appscode https://charts.appscode.com/stable/
 $ helm repo update
-$ helm install appscode/kubedb --name kubedb-operator --namespace kube-system</code></pre>
+$ helm install kubedb --name kubedb-operator --version 0.8.0-rc.0 \
+  --set apiserver.ca="$(onessl get kube-ca)" \
+  --set apiserver.enableValidatingWebhook=true \
+  --set apiserver.enableMutatingWebhook=true</code></pre>
                       </div>
                    </div>
                 </div>
